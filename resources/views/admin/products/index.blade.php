@@ -30,8 +30,8 @@
                             <th>Title</th>
                             <th>Name</th>
                             <th>Category</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>Status</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -66,7 +66,7 @@
                 {data: 'title', name: 'title'},
                 {data: 'name', name: 'name'},
                 {data: 'category', name: 'category'},
-                {data: 'email', name: 'email'},
+                {data: 'status', name: 'status'},
                 {data: 'action', name: 'action', orderable: false, searchable: false},
             ]
         });

@@ -52,6 +52,17 @@
                     </ul>
                 </li>
 
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="uil-window-section"></i>
+                        <span>@lang('translation.Category')</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li><a href="{{route("products.index")}}">@lang('translation.CategoryList')</a></li>
+                        <li><a href="{{route("products.create")}}">@lang('translation.CategoryCreate')</a></li>
+                    </ul>
+                </li>
+
 {{--                <li class="menu-title">@lang('translation.Apps')</li>--}}
 
 {{--                <li>--}}

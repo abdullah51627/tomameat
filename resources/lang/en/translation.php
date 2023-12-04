@@ -150,6 +150,9 @@ return [
   "ProductsCreate" => "Products Create",
   "ProductsList" => "Products List",
     "Products" => "Products",
+    "CategoryCreate" => "Category Create",
+    "CategoryList" => "Category LIst",
+    "Category" => "Category",
 ];
 
 ?>
