@@ -256,7 +256,7 @@ File: Main Js File
 
         // on layou change
         $("input[name='layout']").on('change', function () {
-            window.location.href = ($(this).val() == "vertical") ? "index.blade.php": "layouts-horizontal.html";
+            window.location.href = ($(this).val() == "vertical") ? "dashboard.blade.php": "layouts-horizontal.html";
         });
 
         // on layout mode change

@@ -6,15 +6,25 @@ use App\Models\Product;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
+
 
 class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //
+
+        if($request->ajax()){
+            $data = Product::query();
+            return DataTables::of($data)
+                ->make();
+        }
+        return view("admin.products.index");
     }
 
     /**

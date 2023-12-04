@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-img float_left">
-                        <img src="{{asset('front/images/TomaMeat_1.png')}}" alt="img">
+                        <img src="{{asset('front/images/butcher_1.webp')}}" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

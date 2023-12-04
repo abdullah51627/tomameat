@@ -146,7 +146,10 @@ return [
   "Offcanvas" => "Offcanvas",
   "Placeholders" => "Placeholders",
   "Utilities" => "Utilities",
-  "Toasts" => "Toasts"
+  "Toasts" => "Toasts",
+  "ProductsCreate" => "Products Create",
+  "ProductsList" => "Products List",
+    "Products" => "Products",
 ];
 
 ?>

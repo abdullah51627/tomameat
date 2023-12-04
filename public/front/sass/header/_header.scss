@@ -10,7 +10,7 @@ header css
     // position: fixed;
     // top: 0;
     // z-index: 999;
-    
+
     .open{
     	opacity: 1;
 	    visibility: visible;
@@ -109,7 +109,7 @@ header css
 										&:after {
 											display: none;
 										}
-										
+
 										a {
 											color: $title-color-hover;
 										}
@@ -118,9 +118,9 @@ header css
 										}
 									}
 								}
-								
+
 							}
-							
+
 						}
 
 						.menu-click1{
@@ -278,12 +278,12 @@ header css
 
 					}
 				}
-			
+
 
 			.dropdown-items {
-			
+
 				li {
-					
+
 					.sub-dropdown {
 						border-bottom: 2px solid #ccc;
 					}
@@ -320,7 +320,7 @@ header css
 					    	}
 					}
 			}
-			
+
 		}
 		.menu-fixed{
 			.top-header-wrapper{
@@ -344,7 +344,7 @@ header css
 						    height: 40px;
 						    line-height: 40px;
 						    border-radius: 30px;
-						    
+
 						    a{
 						    	color: #fff;
 							    display: inline-block;
@@ -357,7 +357,7 @@ header css
 					    		}
 						    }
 							img {
-								
+
 								margin-right: 8px;
 							}
 							.user-text{
@@ -404,7 +404,7 @@ header css
 											    font-weight: 400;
 											}
 									}
-									
+
 							}
 							.cart-right{
 								position: relative;
@@ -437,7 +437,7 @@ header css
 								margin-top: 12px;
 									p{
 										color: #111111;
-									    
+
 									    text-transform: uppercase;
 									    font-size: 13px;
 									    font-weight: 600;
@@ -471,13 +471,13 @@ header css
 							}
 					}
 						}
-					
-					
+
+
 						li{
 							display: inline-block;
 						}
 					}
-					
+
 				}
 		}
 	}
@@ -530,7 +530,7 @@ header css
 // ======================== slider
 
 .index1-slider-wrapper{
-	background-image: url(../images/slider.jpg);
+	background-image: url(../images/slider.webp);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -626,7 +626,7 @@ header css
 // ======================== slider
 
 .index2-slider-wrapper{
-	background-image: url(../images/index2/slider.jpg);
+	background-image: url(../images/index2/slider.webp);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -682,7 +682,7 @@ header css
 			    	}
     		}
     	}
-    	
+
 }
 
 
@@ -692,7 +692,7 @@ header css
     background-size: cover;
     background-repeat: no-repeat;
     padding: 95px 0px;
-    
+
     	.slider-text{
     		h4{
     			color: $title-color-white;

@@ -27,9 +27,8 @@ Auth::routes();
 //Route::post('/formsubmit', [App\Http\Controllers\HomeController::class, 'FormSubmit'])->name('FormSubmit');
 
 Route::group(['prefix' => '/admin'],function(){
-   Route::get("/",function(){
-      return "Hello admin";
-   });
+   Route::get("/", [\App\Http\Controllers\DashboardController::class,'index']);
+   Route::resource("products",\App\Http\Controllers\ProductController::class);
 });
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
