@@ -29,6 +29,7 @@ Auth::routes();
 Route::group(['prefix' => '/admin'],function(){
    Route::get("/", [\App\Http\Controllers\DashboardController::class,'index']);
    Route::resource("products",\App\Http\Controllers\ProductController::class);
+   Route::resource("categories", CategoryController::class);
 });
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);

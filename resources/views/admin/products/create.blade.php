@@ -20,15 +20,15 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="mb-3 ">
-                            <label for="example-text-input" class="col-md-2 col-form-label">Name</label>
-                            <div class="col-md-10">
+                            <label for="example-text-input" class=" col-form-label">Name</label>
+                            <div class="col-md-13">
                                 <input class="form-control" type="text" value="{{old("name")}}" id="product-name">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3 ">
-                            <label for="example-text-input" class="col-md-2 col-form-label">Select Priority</label>
+                            <label for="example-text-input" class=" col-form-label">Priority</label>
                             <select class="form-select">
                                 @foreach(\App\Helpers\ProductsHelper::getPriorities() as $priority)
                                 <option value="{{$priority}}">{{$priority}}</option>
@@ -38,95 +38,148 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="mb-3 ">
-                            <label for="example-text-input" class="col-md-2 col-form-label">Text</label>
-                            <div class="col-md-10">
+                            <label for="example-text-input" class=" col-form-label">Text</label>
+                            <div class="col-md-13">
                                 <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Price</label>
+                            <div class="col-md-13">
+                                <input class="form-control" type="text" value="" id="price" name="price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Quantity</label>
+                            <div class="col-md-13">
+                                <input class="form-control" type="number" value="" id="qty" name="qty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Title</label>
+                            <div class="col-md-13">
+                                <input class="form-control" type="text" value="" id="title">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Keywords</label>
+                            <div class="col-md-13">
+                                <select class="multiple-select js-example-basic-multiple form-control" name="keywords[]" multiple="multiple">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Category</label>
+                            <div class="col-md-13">
+                                <select class="multiple-select js-example-basic-multiple form-control" name="category">
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Description</label>
+                            <div class="col-md-13">
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="example-text-input" class="col-md-2 col-form-label">Text</label>
-                    <div class="col-md-10">
+                    <label for="example-text-input" class=" col-form-label">Text</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-search-input" class="col-md-2 col-form-label">Search</label>
-                    <div class="col-md-10">
+                    <label for="example-search-input" class=" col-form-label">Search</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-email-input" class="col-md-2 col-form-label">Email</label>
-                    <div class="col-md-10">
+                    <label for="example-email-input" class=" col-form-label">Email</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-url-input" class="col-md-2 col-form-label">URL</label>
-                    <div class="col-md-10">
+                    <label for="example-url-input" class=" col-form-label">URL</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-tel-input" class="col-md-2 col-form-label">Telephone</label>
-                    <div class="col-md-10">
+                    <label for="example-tel-input" class=" col-form-label">Telephone</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-password-input" class="col-md-2 col-form-label">Password</label>
-                    <div class="col-md-10">
+                    <label for="example-password-input" class=" col-form-label">Password</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="password" value="hunter2" id="example-password-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-number-input" class="col-md-2 col-form-label">Number</label>
-                    <div class="col-md-10">
+                    <label for="example-number-input" class=" col-form-label">Number</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="number" value="42" id="example-number-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-datetime-local-input" class="col-md-2 col-form-label">Date and time</label>
-                    <div class="col-md-10">
+                    <label for="example-datetime-local-input" class=" col-form-label">Date and time</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-date-input" class="col-md-2 col-form-label">Date</label>
-                    <div class="col-md-10">
+                    <label for="example-date-input" class=" col-form-label">Date</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-month-input" class="col-md-2 col-form-label">Month</label>
-                    <div class="col-md-10">
+                    <label for="example-month-input" class=" col-form-label">Month</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="month" value="2019-08" id="example-month-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-week-input" class="col-md-2 col-form-label">Week</label>
-                    <div class="col-md-10">
+                    <label for="example-week-input" class=" col-form-label">Week</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="week" value="2019-W33" id="example-week-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-time-input" class="col-md-2 col-form-label">Time</label>
-                    <div class="col-md-10">
+                    <label for="example-time-input" class=" col-form-label">Time</label>
+                    <div class="col-md-13">
                         <input class="form-control" type="time" value="13:45:00" id="example-time-input">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="example-color-input" class="col-md-2 col-form-label">Color picker</label>
-                    <div class="col-md-10">
+                    <label for="example-color-input" class=" col-form-label">Color picker</label>
+                    <div class="col-md-13">
                         <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#5b73e8" title="Choose your color">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                    <label class="col-md-2 col-form-label">Select Priority</label>
-                    <div class="col-md-10">
+                    <label class=" col-form-label">Select Priority</label>
+                    <div class="col-md-13">
                         <select class="form-select">
                             <option>Select</option>
                             <option>Large select</option>
@@ -136,8 +189,8 @@
                 </div>
 
                 <div class="row">
-                    <label for="exampleDataList" class="col-md-2 col-form-label">Datalists</label>
-                    <div class="col-md-10">
+                    <label for="exampleDataList" class=" col-form-label">Datalists</label>
+                    <div class="col-md-13">
                         <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
                         <datalist id="datalistOptions">
                             <option value="San Francisco">

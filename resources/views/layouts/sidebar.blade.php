@@ -58,8 +58,8 @@
                         <span>@lang('translation.Category')</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
-                        <li><a href="{{route("products.index")}}">@lang('translation.CategoryList')</a></li>
-                        <li><a href="{{route("products.create")}}">@lang('translation.CategoryCreate')</a></li>
+                        <li><a href="{{route("categories.index")}}">@lang('translation.CategoryList')</a></li>
+                        <li><a href="{{route("categories.create")}}">@lang('translation.CategoryCreate')</a></li>
                     </ul>
                 </li>
 
