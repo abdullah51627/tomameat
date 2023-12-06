@@ -20,8 +20,11 @@ class ProductController extends Controller
         //
 
         if($request->ajax()){
-            $data = Product::query();
+            $data = Product::with("categoryRelation");
             return DataTables::of($data)
+            ->addColumn("action",function($row){
+                return json_encode($row->categoryRelation);
+            })
                 ->make();
         }
         return view("admin.products.index");
@@ -42,6 +45,7 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         //
+        dd($request->all());
     }
 
     /**

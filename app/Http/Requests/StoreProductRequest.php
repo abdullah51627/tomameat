@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Helpers\ProductsHelper;
 
 class StoreProductRequest extends FormRequest
 {
@@ -11,7 +12,7 @@ class StoreProductRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +23,13 @@ class StoreProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => "required",
+            'priority' => 'required|in:'.implode(",",ProductsHelper::getPriorities()),
+            'price' => "required",
+            'category' => 'required|exists:categories,id',
+            'description' => "required|max:400",
+            'qty' => 'required',
+            'keywords' => 'array',
         ];
     }
 }
