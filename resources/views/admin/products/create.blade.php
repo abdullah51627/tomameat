@@ -38,6 +38,7 @@
                             </select>
                         </div>
                     </div>
+
                     {{-- <div class="col-lg-4">
                         <div class="mb-3 ">
                             <label for="example-text-input" class=" col-form-label">Slug</label>
@@ -75,7 +76,7 @@
                             <label for="example-text-input" class=" col-form-label">Keywords</label>
                             <div class="col-md-13">
                                 <select class="multiple-select js-example-basic-multiple form-control" name="keywords[]" multiple="multiple">
-                                    
+
                                 </select>
                             </div>
                         </div>
@@ -101,7 +102,7 @@
                     <div class="col-lg-12">
                         <button class="btn btn-success">Submit</button>
                     </div>
-                    
+
                 </div>
 
             </div>
