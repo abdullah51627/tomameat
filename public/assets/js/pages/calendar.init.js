@@ -95,7 +95,7 @@ File: Calendar init js
       formEvent.removeClass("was-validated");
       formEvent[0].reset();
       $("#event-title").val();
-      $('#event-category').val();
+      $('#event-categories').val();
       modalTitle.text('Add Event');
       newEventData = info;
     }
@@ -117,7 +117,7 @@ File: Calendar init js
         formEvent[0].reset();
         selectedEvent = info.event;
         $("#event-title").val(selectedEvent.title);
-        $('#event-category').val(selectedEvent.classNames[0]);
+        $('#event-categories').val(selectedEvent.classNames[0]);
         newEventData = null;
         modalTitle.text('Edit Event');
         newEventData = null;
@@ -135,7 +135,7 @@ File: Calendar init js
       ev.preventDefault();
       var inputs = $('#form-event :input');
       var updatedTitle = $("#event-title").val();
-      var updatedCategory = $('#event-category').val(); // validation
+      var updatedCategory = $('#event-categories').val(); // validation
 
       if (forms[0].checkValidity() === false) {
         event.preventDefault();
@@ -173,7 +173,7 @@ File: Calendar init js
     });
   }, //init
   $.CalendarPage = new CalendarPage(), $.CalendarPage.Constructor = CalendarPage;
-}(window.jQuery), //initializing 
+}(window.jQuery), //initializing
 function ($) {
   "use strict";
 

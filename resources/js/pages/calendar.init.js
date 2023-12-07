@@ -14,7 +14,7 @@ File: Calendar init js
     CalendarPage.prototype.init = function() {
 
 
-                       
+
             var addEvent=$("#event-modal");
             var modalTitle = $("#modal-title");
             var formEvent = $("#form-event");
@@ -103,11 +103,11 @@ File: Calendar init js
                 formEvent[0].reset();
 
                 $("#event-title").val();
-                $('#event-category').val();
+                $('#event-categories').val();
                 modalTitle.text('Add Event');
                 newEventData = info;
             }
-            
+
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid'],
@@ -126,7 +126,7 @@ File: Calendar init js
                     formEvent[0].reset();
                     selectedEvent = info.event;
                     $("#event-title").val(selectedEvent.title);
-                    $('#event-category').val(selectedEvent.classNames[0]);
+                    $('#event-categories').val(selectedEvent.classNames[0]);
                     newEventData = null;
                     modalTitle.text('Edit Event');
                     newEventData = null;
@@ -137,7 +137,7 @@ File: Calendar init js
                 events : defaultEvents
             });
             calendar.render();
-            
+
              /*Add new event*/
             // Form to add new event
 
@@ -145,8 +145,8 @@ File: Calendar init js
                 ev.preventDefault();
                 var inputs = $('#form-event :input');
                 var updatedTitle = $("#event-title").val();
-                var updatedCategory =  $('#event-category').val();
-                
+                var updatedCategory =  $('#event-categories').val();
+
                 // validation
                 if (forms[0].checkValidity() === false) {
                         event.preventDefault();
@@ -186,7 +186,7 @@ File: Calendar init js
     $.CalendarPage = new CalendarPage, $.CalendarPage.Constructor = CalendarPage
 }(window.jQuery),
 
-//initializing 
+//initializing
 function($) {
     "use strict";
     $.CalendarPage.init()

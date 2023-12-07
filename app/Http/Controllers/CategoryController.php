@@ -6,15 +6,24 @@ use App\Models\Category;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
+use Illuminate\Http\Request;
+use Yajra\DataTables\DataTables;
 
 class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //
+        if($request->ajax()){
+            $categories = Category::query();
+            return DataTables::of($categories)->make();
+        }
+
+        return view('admin.categories.index');
+
     }
 
     /**
@@ -23,6 +32,8 @@ class CategoryController extends Controller
     public function create()
     {
         //
+
+        return view('admin.categories.create');
     }
 
     /**
@@ -31,6 +42,9 @@ class CategoryController extends Controller
     public function store(StoreCategoryRequest $request)
     {
         //
+        $data = $request->except("_token");
+        Category::create($data);
+        return redirect()->back()->with(["SuccessMsg" => ["Category Created Successfully!"]]);
     }
 
     /**

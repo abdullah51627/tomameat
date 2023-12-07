@@ -22,6 +22,7 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="container-fluid">
+                    @include("message")
                     @yield('content')
                 </div>
                 <!-- container-fluid -->

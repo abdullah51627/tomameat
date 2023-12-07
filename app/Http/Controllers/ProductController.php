@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Yajra\DataTables\Facades\DataTables;
 
 
@@ -20,10 +21,10 @@ class ProductController extends Controller
         //
 
         if($request->ajax()){
-            $data = Product::with("categoryRelation");
+            $data = Product::with("categoryRel");
             return DataTables::of($data)
             ->addColumn("action",function($row){
-                return json_encode($row->categoryRelation);
+                return $row->categoryRel;
             })
                 ->make();
         }
@@ -45,7 +46,12 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         //
-        dd($request->all());
+
+        $data = $request->except(['_token']);
+        $data['url'] = Str::slug($data['title']);
+        $data['meta_description'] = $data['description'];
+        Product::create($data);
+        return redirect()->back()->with(['successMsg' => ["Product Created Successfully!"]]);
     }
 
     /**

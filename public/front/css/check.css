@@ -1,5 +1,5 @@
 .cat{
-  
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -36,12 +36,12 @@
 /* This will declare how a selected input will look giving generic properties */
 .cat input:checked + span {
     color: #ffffff;
-    
+
 }
 
 
 /*
-This following statements selects each category individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
+This following statements selects each categories individually that contains an input element that is a checkbox and is checked (or selected) and chabges the background color of the span element.
 */
 
 .action input:checked + span{

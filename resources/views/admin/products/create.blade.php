@@ -49,9 +49,9 @@
                     </div> --}}
                     <div class="col-lg-4">
                         <div class="mb-3 ">
-                            <label for="example-text-input" class=" col-form-label">Price</label>
+                            <label for="example-text-input"  class=" col-form-label">Price</label>
                             <div class="col-md-13">
-                                <input class="form-control" type="text" value="" id="price" name="price">
+                                <input class="form-control" value="{{old('price')}}" type="text" id="price" name="price">
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                         <div class="mb-3 ">
                             <label for="example-text-input" class=" col-form-label">Quantity</label>
                             <div class="col-md-13">
-                                <input class="form-control" type="number" value="" id="qty" name="qty">
+                                <input class="form-control" type="number" value="{{old('qty')}}" id="qty" name="qty">
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                         <div class="mb-3 ">
                             <label for="example-text-input" class=" col-form-label">Title</label>
                             <div class="col-md-13">
-                                <input class="form-control" type="text" value="" id="title">
+                                <input class="form-control" type="text" value="{{old('title')}}" name="title" id="title">
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,9 @@
                             <label for="example-text-input" class=" col-form-label">Category</label>
                             <div class="col-md-13">
                                 <select class="multiple-select js-example-basic-multiple form-control" name="category">
-                                    <option value="1">1</option>
+                                    @foreach(\App\Models\Category::get() as $categoary)
+                                        <option value="{{$categoary->id}}">{{$categoary->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
@@ -95,7 +97,7 @@
                         <div class="mb-3 ">
                             <label for="example-text-input" class=" col-form-label">Description</label>
                             <div class="col-md-13">
-                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control">{{old('description')}}</textarea>
                             </div>
                         </div>
                     </div>

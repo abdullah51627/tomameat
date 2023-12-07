@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
             'name' => 'Chicken Breast',
             'description' => "Chicken breast is a must have item in every freezer. It's a rich source of protein which is vital for muscle building. Chicken breast is highly versatile and a great addition to everyday meals.",
             'priority' => 1,
-            'category' => Category::first()->id,
+            'categories' => Category::first()->id,
             'rating' => 0,
             'price' => 100,
             'discount' => 20,

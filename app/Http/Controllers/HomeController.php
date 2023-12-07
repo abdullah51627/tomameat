@@ -55,6 +55,10 @@ class HomeController extends Controller
         return view('form-repeater');
     }
     public function home(){
-        return view("front.index");
+        $data = [
+            'categories' => \App\Models\Category::with("products")->orderBy('id','asc')->get(),
+        ];
+
+        return view("front.index",compact('data'));
     }
 }
