@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/responsive.css')}}" />
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="{{asset('front/images/fav-')}}icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
 </head>
 
 <body>
@@ -170,7 +171,8 @@
                                     </li>
 
                                     <li class="nav-item menu-click1 ps-rel">
-                                        <a class="nav-link" href="javascript:;">Cart &nbsp;<i class="fa fa-shopping-cart"
+                                        <a class="nav-link" href="javascript:;">Cart &nbsp;<span class="cartCount">{{ Cart::getTotalQuantity()}}</span>
+                                            <i class="fa fa-shopping-cart"
                                                                                               aria-hidden="true"></i></a>
 
                                         <ul class="dropdown-items menu-open1">
@@ -454,6 +456,7 @@
 <script src="{{asset('front/js/jquery.magnific-popup.js')}}"></script>
 <script src="{{asset('front/js/isotope.pkgd.min.js')}}"></script>
 <script src="{{asset('front/js/custom.js')}}"></script>
+<script src="{{asset('assets/js/toaster.js')}}"></script>
 
 <!-- custom js-->
 <script>
@@ -477,7 +480,26 @@
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+    $('.addToCart').click(function(e){
+        e.preventDefault();
+        const id = $(this).attr("data-product-id");
+        $.post("{{route('cart.store')}}",{_token:"{{csrf_token()}}",product_id: id},function(data){
+            console.log(data,'successfull data');
+            if(data.code == 200){
+                const cartCount = data.data.cartCount;
+
+                updateCartCount(cartCount);
+                toastr.success(data.message, 'Success');
+            }
+        })
+    })
+
+    function updateCartCount(count){
+        $(".cartCount").text(count)
+    }
 </script>
+
+@yield('script')
 </body>
 
 </html>

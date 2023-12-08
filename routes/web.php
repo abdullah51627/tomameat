@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,10 +27,16 @@ Auth::routes();
 //Route::post('/formsubmit', [App\Http\Controllers\HomeController::class, 'FormSubmit'])->name('FormSubmit');
 
 Route::group(['prefix' => '/admin'],function(){
-   Route::get("/", [\App\Http\Controllers\DashboardController::class,'index']);
-   Route::resource("products",\App\Http\Controllers\ProductController::class);
-   Route::resource("categories", \App\Http\Controllers\CategoryController::class);
+    Route::get("/", [\App\Http\Controllers\DashboardController::class,'index']);
+    Route::resource("products",\App\Http\Controllers\ProductController::class);
+    Route::resource("categories", \App\Http\Controllers\CategoryController::class);
+
 });
 
+Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
+Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
+Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
+Route::post('cart-remove', [CartController::class, 'removeCart'])->name('cart.remove');
+Route::post('cart-clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
 
