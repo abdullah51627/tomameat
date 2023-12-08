@@ -27,7 +27,7 @@ class StoreProductRequest extends FormRequest
             'priority' => 'required|in:'.implode(",",ProductsHelper::getPriorities()),
             'price' => "required",
             'category' => 'required|exists:categories,id',
-            'description' => "required|max:400",
+            'description' => "required|max:1000",
             'qty' => 'required',
             'keywords' => 'array',
         ];
