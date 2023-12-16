@@ -135,7 +135,7 @@
                                                     class="fas fa-chevron-down"></i></span></a>
                                         <ul class="dropdown-items menu-open3">
                                             <li><a href="product.html">Product</a></li>
-                                            <li><a href="product-left-sidebar.html">Product Left Sidebar</a></li>
+                                            <li><a href="/shop">Product Left Sidebar</a></li>
                                             <li><a href="product-right-sidebar.html">Product Right Sidebar</a></li>
                                             <li><a href="product-single.html"> Product Single</a></li>
                                             <li><a href="checkout.html"> Checkout</a></li>
@@ -169,38 +169,42 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="store.html">Store</a>
                                     </li>
-
                                     <li class="nav-item menu-click1 ps-rel">
-                                        <a class="nav-link" href="javascript:;">Cart &nbsp;<span class="cartCount">{{ Cart::getTotalQuantity()}}</span>
-                                            <i class="fa fa-shopping-cart"
-                                                                                              aria-hidden="true"></i></a>
-
-                                        <ul class="dropdown-items menu-open1">
-                                            <li>
-                                                <span>1 Item</span>
-                                                <a href="javascript:;"> View Cart</a>
-                                            </li>
-                                            <li class="cart_list">
-                                                <div class="select_cart">
-                                                    <a href="#">Bee Meat</a>
-                                                    <span>1 x $258.00</span>
-                                                </div>
-                                                <div class="select_img">
-                                                    <img alt="img" src="{{asset('front/images/pm3.gif')}}">
-                                                    <div class="close_btn">
-                                                        <i class="fa fa-times"></i>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="sub_total">
-                                                <p>Sub Total:<span>$ 289.00</span></p>
-                                            </li>
-                                            <li class="cart_btn">
-                                                <a href="cart.html"><i class="fas fa-shopping-cart"></i>&nbsp; View Cart</a>
-                                                <a href="checkout.html"><i class="fas fa-share"></i>&nbsp; Checkout</a>
-                                            </li>
-                                        </ul>
+                                        <a class="nav-link" href="/cart">Cart <span class="cartCount">{{ Cart::getTotalQuantity()}}</span> <i class="fa fa-shopping-cart"
+                                                                                                                                                   aria-hidden="true"></i></a>
                                     </li>
+
+{{--                                    <li class="nav-item menu-click1 ps-rel">--}}
+{{--                                        <a class="nav-link" href="javascript:;">Cart &nbsp;<span class="cartCount">{{ Cart::getTotalQuantity()}}</span>--}}
+{{--                                            <i class="fa fa-shopping-cart"--}}
+{{--                                                                                              aria-hidden="true"></i></a>--}}
+
+{{--                                        <ul class="dropdown-items menu-open1">--}}
+{{--                                            <li>--}}
+{{--                                                <span>1 Item</span>--}}
+{{--                                                <a href="javascript:;"> View Cart</a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="cart_list">--}}
+{{--                                                <div class="select_cart">--}}
+{{--                                                    <a href="#">Bee Meat</a>--}}
+{{--                                                    <span>1 x $258.00</span>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="select_img">--}}
+{{--                                                    <img alt="img" src="{{asset('front/images/pm3.gif')}}">--}}
+{{--                                                    <div class="close_btn">--}}
+{{--                                                        <i class="fa fa-times"></i>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="sub_total">--}}
+{{--                                                <p>Sub Total:<span>$ 289.00</span></p>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="cart_btn">--}}
+{{--                                                <a href="/cart"><i class="fas fa-shopping-cart"></i>&nbsp; View Cart</a>--}}
+{{--                                                <a href="checkout.html"><i class="fas fa-share"></i>&nbsp; Checkout</a>--}}
+{{--                                            </li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </nav>
                         </div>
@@ -242,7 +246,7 @@
                                                 <p>Sub Total: <span>$ 289.00</span> </p>
                                             </div>
                                             <div class="btn-cart">
-                                                <a href="cart.html"><i class="fas fa-shopping-cart"></i>&nbsp; View Cart</a>
+                                                <a href="/cart"><i class="fas fa-shopping-cart"></i>&nbsp; View Cart</a>
                                                 <a href="checkout.html"><i class="fas fa-share"></i>&nbsp; Checkout</a>
                                             </div>
                                         </div>
@@ -281,7 +285,7 @@
                         <a href="">Shop</a>
                         <ul>
                             <li><a href="product.html">Product</a></li>
-                            <li><a href="product-left-sidebar.html">Product Left Sidebar</a></li>
+                            <li><a href="/shop">Product Left Sidebar</a></li>
                             <li><a href="jproduct-right-sidebar.html">Product Right Sidebar</a></li>
                             <li><a href="product-single.html">Product Single</a></li>
                             <li><a href="checkout.html">Checkout</a></li>
@@ -339,7 +343,7 @@
                                 <a href="product.html">Product</a>
                             </li>
                             <li>
-                                <a href="product-left-sidebar.html">Product left Sidebar</a>
+                                <a href="/shop">Product left Sidebar</a>
                             </li>
                             <li>
                                 <a href="product-right-sidebar.html">Product Right Sidebar</a>
@@ -479,7 +483,9 @@
     }
 
     // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+    if($("#defaultOpen").length > 0){
+        document.getElementById("defaultOpen").click();
+    }
     $('.addToCart').click(function(e){
         e.preventDefault();
         const id = $(this).attr("data-product-id");

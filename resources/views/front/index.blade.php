@@ -167,7 +167,7 @@
                                     @endforeach
 
                                     <div class="center-btn">
-                                        <a href="product-left-sidebar.html">View All</a>
+                                        <a href="/shop">View All</a>
                                     </div>
                                 </div>
                             </div>
@@ -563,7 +563,7 @@
                         <h2 class="call">+61 3 8376 6284</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentumlaoreet velit ut rhoncus.
                             Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-                        <a class="custom-btn" href="store.html">Contact Us</a>
+                        <a class="custom-btn" href="shop.blade.php">Contact Us</a>
                     </div>
                 </div>
             </div>

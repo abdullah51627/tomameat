@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\App;
@@ -60,5 +62,24 @@ class HomeController extends Controller
         ];
 
         return view("front.index",compact('data'));
+    }
+    public function shop(Request $request){
+        $featuredProduct = Product::inRandomOrder()->first();
+        $products = Product::with("categoryRel");
+        if($request->has("search")){
+            $products->search($request->search);
+        }
+
+        if($request->has("category")){
+            $products->where('category',$request->category);
+        }
+        $products->orderBy("priority",'asc');
+
+        $products = $products->paginate(15);
+        $categories = Category::whereHas('products');
+
+        $categories = $categories->limit(15)->get();
+
+        return view("front.shop",compact('products','categories','featuredProduct'));
     }
 }

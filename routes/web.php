@@ -39,4 +39,4 @@ Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.up
 Route::post('cart-remove', [CartController::class, 'removeCart'])->name('cart.remove');
 Route::post('cart-clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
-
+Route::get("/shop",[\App\Http\Controllers\HomeController::class,'shop']);
