@@ -67,7 +67,7 @@
                                         <a href="#" class="text-body">Simon Ryles</a>
                                     </td>
                                     <td>Full Stack Developer</td>
-                                    <td>SimonRyles@minible.com</td>
+                                    <td>SimonRyles@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -106,7 +106,7 @@
                                         <a href="#" class="text-body">Marion Walker</a>
                                     </td>
                                     <td>Frontend Developer</td>
-                                    <td>MarionWalker@minible.com</td>
+                                    <td>MarionWalker@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -148,7 +148,7 @@
                                         <a href="#" class="text-body">Frederick White</a>
                                     </td>
                                     <td>UI/UX Designer</td>
-                                    <td>FrederickWhite@minible.com</td>
+                                    <td>FrederickWhite@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -187,7 +187,7 @@
                                         <a href="#" class="text-body">Shanon Marvin</a>
                                     </td>
                                     <td>Backend Developer</td>
-                                    <td>ShanonMarvin@minible.com</td>
+                                    <td>ShanonMarvin@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -229,7 +229,7 @@
                                         <a href="#" class="text-body">Mark Jones</a>
                                     </td>
                                     <td>Frontend Developer</td>
-                                    <td>MarkJones@minible.com</td>
+                                    <td>MarkJones@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -268,7 +268,7 @@
                                         <a href="#" class="text-body">Janice Morgan</a>
                                     </td>
                                     <td>Backend Developer</td>
-                                    <td>JaniceMorgan@minible.com</td>
+                                    <td>JaniceMorgan@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -307,7 +307,7 @@
                                         <a href="#" class="text-body">Patrick Petty</a>
                                     </td>
                                     <td>UI/UX Designer</td>
-                                    <td>PatrickPetty@minible.com</td>
+                                    <td>PatrickPetty@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -346,7 +346,7 @@
                                         <a href="#" class="text-body">Marilyn Horton</a>
                                     </td>
                                     <td>Backend Developer</td>
-                                    <td>MarilynHorton@minible.com</td>
+                                    <td>MarilynHorton@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -385,7 +385,7 @@
                                         <a href="#" class="text-body">Neal Womack</a>
                                     </td>
                                     <td>Full Stack Developer</td>
-                                    <td>NealWomack@minible.com</td>
+                                    <td>NealWomack@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">
@@ -427,7 +427,7 @@
                                         <a href="#" class="text-body">Steven Williams</a>
                                     </td>
                                     <td>Frontend Developer</td>
-                                    <td>Steven Williams@minible.com</td>
+                                    <td>Steven Williams@tomameat.com</td>
                                     <td>
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item">

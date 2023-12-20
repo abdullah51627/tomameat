@@ -55,7 +55,7 @@
                         </div>
                         <div class="mt-4">
                             <p class="mb-1">E-mail :</p>
-                            <h5 class="font-size-16">marcus@minible.com</h5>
+                            <h5 class="font-size-16">marcus@tomameat.com</h5>
                         </div>
                         <div class="mt-4">
                             <p class="mb-1">Location :</p>
