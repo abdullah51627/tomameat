@@ -1,9 +1,9 @@
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: file manager init js
+
+
+
+
+
 */
 
 //  line chart datalabel
@@ -34,7 +34,7 @@ function getChartColorsArray(chartId) {
     }
 }
 
- 
+
 //  Sales Statistics
 var BarchartOverviewColors = getChartColorsArray("overview");
 if (BarchartOverviewColors) {
@@ -56,13 +56,13 @@ var options = {
         }
     },
 
-   
+
     plotOptions: {
         bar: {
             columnWidth: '55%',
             distributed: true,
             endingShape: 'rounded',
-           
+
         }
     },
 
@@ -71,7 +71,7 @@ var options = {
     },
 
     stroke: {
-      show: false, 
+      show: false,
     },
     dataLabels: {
         enabled: false,

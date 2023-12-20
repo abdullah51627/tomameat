@@ -11856,7 +11856,7 @@
       return documentOrOwner(element);
     };
 
-    var Navigation = /*#__PURE__*/Object.freeze({
+    var Navigation = Object.freeze({
         __proto__: null,
         view: view,
         owner: owner

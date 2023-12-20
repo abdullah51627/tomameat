@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!***********************************************!*\
   !*** ./resources/js/pages/sparklines.init.js ***!
   \***********************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Sparkline chart Init
+
+
+
+
+
 */
 function getChartColorsArray(chartId) {
   if (document.getElementById(chartId) !== null) {
@@ -196,5 +196,5 @@ $(document).ready(function () {
   });
   SparklineCharts();
 });
-/******/ })()
+ })()
 ;

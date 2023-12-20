@@ -39,7 +39,7 @@ class HomeController extends Controller
         return view('index');
     }
 
-    /*Language Translation*/
+
     public function lang($locale)
     {
         if ($locale) {
@@ -81,5 +81,20 @@ class HomeController extends Controller
         $categories = $categories->limit(15)->get();
 
         return view("front.shop",compact('products','categories','featuredProduct'));
+    }
+
+    public function checkout(Request $request){
+
+
+        if($request->getMethod() == 'POST'){
+
+            dd($request->all());
+        }
+        $items = \Cart::getContent();
+
+        return view("front.checkout",compact('items'));
+    }
+    public function signup(Request $request){
+        dd($request->all());
     }
 }

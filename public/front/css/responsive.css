@@ -1,4 +1,4 @@
-/*--width 1700 --*/
+
 @media (max-width: 1700px) {
   .main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 nav ul li .dropdown-items li .sub-dropdown {
     width: 200px;
@@ -14,7 +14,7 @@
   }
 }
 
-/*--width 1400 --*/
+
 @media (max-width: 1400px) {
   .professional-main-wrapper .left-side h2 {
     font-size: 45px;
@@ -30,7 +30,7 @@
   }
 }
 
-/*--width 1366 --*/
+
 @media (max-width: 1366px) {
   .million-jobs-main-wrapper .job-details-main-wrapper {
     max-width: 500px;
@@ -46,7 +46,7 @@
   }
 }
 
-/*--width 1199 --*/
+
 @media (max-width: 1199px) {
   .container {
     max-width: 1140px;
@@ -123,7 +123,7 @@
   }
 }
 
-/*--width 1050 --*/
+
 @media (max-width: 1050px) {
   .main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 nav ul li a span {
     display: contents;
@@ -140,9 +140,9 @@
   }
 }
 
-/*--width 1024 --*/
+
 @media (max-width: 1024px) {
-  .index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
+  .index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
     width: 75px;
     height: 75px;
     line-height: 78px;
@@ -153,7 +153,7 @@
   }
 }
 
-/*--width 993 --*/
+
 @media (max-width: 993px) {
   .main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 nav ul li a {
     padding: 34px 7px;
@@ -242,7 +242,7 @@
   .index1-listing-slider-wrapper {
     margin-top: 80px;
   }
-  .our-butchery-wrapper .about-img-block {
+  .our-tomameaty-wrapper .about-img-block {
     margin-top: 30px;
   }
   .delivery-way .delivery-box {
@@ -270,7 +270,7 @@
   .news-blog-wrapper .blog-box .blog-text h4 {
     font-size: 16px;
   }
-  .index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
+  .index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
     left: 50%;
     top: 46%;
   }
@@ -313,7 +313,7 @@
   .home-delivery-sec-wrapper .delivery-main-wrapper .delivery-box {
     width: 50%;
   }
-  .our-butchery-wrapper .about-text {
+  .our-tomameaty-wrapper .about-text {
     padding-top: 0;
   }
   .news-blog-wrapper .blog-box {
@@ -377,7 +377,7 @@
   .location-maib-wrapper .loaction-map {
     width: 100%;
   }
-  .index2-our-butchery-wrapper .team-box-wrapper {
+  .index2-our-tomameaty-wrapper .team-box-wrapper {
     margin-bottom: 30px;
   }
   .product-filter-main-wrapper .tab {
@@ -392,7 +392,7 @@
   .contact_img_background:before {
     display: none;
   }
-  .index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
+  .index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     top: 50%;
@@ -452,7 +452,7 @@
   }
 }
 
-/*---width 580--*/
+
 @media (max-width: 575px) {
   .filter-item li.active, .filter-item li {
     width: 100%;
@@ -550,19 +550,19 @@
   .customer-blog-wrapper .product-single-wrapper .custom-tabs-prdt {
     width: 48%;
   }
-  .our-butchery-wrapper .about-img-block .img2 {
+  .our-tomameaty-wrapper .about-img-block .img2 {
     position: inherit;
   }
-  .our-butchery-wrapper .about-img-block .img2 img {
+  .our-tomameaty-wrapper .about-img-block .img2 img {
     width: 100%;
   }
-  .our-butchery-wrapper .about-img-block .img1 img {
+  .our-tomameaty-wrapper .about-img-block .img1 img {
     width: 100%;
   }
-  .our-butchery-wrapper .about-img-block {
+  .our-tomameaty-wrapper .about-img-block {
     height: auto;
   }
-  .index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
+  .index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube {
     left: 52%;
   }
   .shape-wrapper:after {
@@ -573,7 +573,7 @@
   }
 }
 
-/*-- width 480 --*/
+
 @media (max-width: 480px) {
   .index1-slider-wrapper .overlay-slider .slider-caption {
     padding-top: 30px;
@@ -616,7 +616,7 @@
   }
 }
 
-/*-- width 450 --*/
+
 @media (max-width: 450px) {
   .inner-page-main-wrapper .top-pipe-search-wrapper .search-box {
     width: 100%;
@@ -689,7 +689,7 @@
   }
 }
 
-/*-- width 360 --*/
+
 @media (max-width: 360px) {
   .footer-main-wrapper .link h4 {
     font-size: 30px;
@@ -702,5 +702,4 @@
   }
 }
 
-/*--width 320 --*/
-/*# sourceMappingURL=responsive.css.map */
+

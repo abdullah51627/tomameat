@@ -170,7 +170,7 @@
                         -ms-transition: all 0.5s;
                         -moz-transition: all 0.5s;
                         transition: all 0.5s;
-                            
+
                     }
                     &:after{
                         content: '';
@@ -223,11 +223,11 @@
                 padding-top: 22px;
             }
     }
-   
+
 }
 
 
-.our-butchery-wrapper{
+.our-tomameaty-wrapper{
     background-image: url(../images/section-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -257,7 +257,7 @@
        p{
          font-size: 12px;
         color: #9f9f9f;
-       } 
+       }
        .custom-btn{
             font-size: 14px;
             display: inline-block;
@@ -299,7 +299,7 @@
     }
     .about-img-block{
         position: relative;
-        height: 640px;   
+        height: 640px;
             .img1{
                 overflow: hidden;
                 img{
@@ -355,7 +355,7 @@
             font-weight: 700;
             color: #ef5350;
             text-transform: uppercase;
-            
+
         }
         .call{
             padding-top: 40px;
@@ -434,7 +434,7 @@
                 padding-top: 22px;
             }
     }
-    
+
     .blog-box{
         display: flex;
         background-color: #fff;
@@ -458,7 +458,7 @@
              width: 65%;
             position: relative;
             padding-left: 20px;
-           
+
             h4{
                 font-size: 20px;
                 font-weight: 600;
@@ -566,7 +566,7 @@
                     //     color: #efbc50;
                     // }
                 }
-                
+
         }
         .counter-text{
             text-align: center;
@@ -826,7 +826,7 @@
         box-shadow: 0px 6px 20px #00000026;
             .about-img{
                 width: 50%;
-                
+
                 background-color: #efbc50;
                     img{
                         width: 100%;
@@ -895,7 +895,7 @@
    }
 }
 
-.index2-butchery-team-wrapper{
+.index2-tomameaty-team-wrapper{
     margin-top: 0;
         .about-block-wrapper{
             flex-direction: row-reverse;
@@ -981,7 +981,7 @@
 }
 
 
-.index2-our-butchery-wrapper{
+.index2-our-tomameaty-wrapper{
     position: relative;
     margin-top: -130px;
 }
@@ -1002,7 +1002,7 @@
                 padding-top: 22px;
             }
     }
-    
+
     .tab{
         float: left;
         border: 1px dashed #ccc;
@@ -1209,7 +1209,7 @@
                 }
             }
     }
-    
+
 }
 
 
@@ -1491,7 +1491,7 @@
                         }
                 }
             }
-            
+
         }
         .team-content{
             margin-top: 20px;

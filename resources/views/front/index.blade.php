@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-img float_left">
-                        <img src="{{asset('front/images/butcher_1.webp')}}" alt="img">
+                        <img src="{{asset('front/images/tomameat_1.webp')}}" alt="img">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -749,7 +749,7 @@
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
                         <div class="r-text">
-                            <h4> +1 800 123 4567</h4>
+                            <h4> +92 331 379 9210</h4>
                         </div>
                     </div>
                     <!--  -->

@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!****************************************************!*\
   !*** ./resources/js/pages/form-validation.init.js ***!
   \****************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Form validation Js File
+
+
+
+
+
 */
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -35,5 +35,5 @@ File: Form validation Js File
 $(document).ready(function () {
   $('.custom-validation').parsley();
 });
-/******/ })()
+ })()
 ;

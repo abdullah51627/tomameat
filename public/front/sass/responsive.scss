@@ -70,7 +70,7 @@ $transition: all 0.5s;
 
 
 
-/*--width 1700 --*/
+
 
 @media (max-width: 1700px) {
 	.main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 nav ul li .dropdown-items li .sub-dropdown{
@@ -93,7 +93,7 @@ $transition: all 0.5s;
 
 
 
-/*--width 1400 --*/
+
 
 @include for-big-desktop-large {
 	.professional-main-wrapper .left-side h2{
@@ -111,7 +111,7 @@ $transition: all 0.5s;
 }
 
 
-/*--width 1366 --*/
+
 
 @media (max-width: 1366px) {
 	.million-jobs-main-wrapper .job-details-main-wrapper{
@@ -130,7 +130,7 @@ $transition: all 0.5s;
 
 
 
-/*--width 1199 --*/
+
 
 @include for-big-desktop-up {
 	.container{
@@ -146,7 +146,7 @@ $transition: all 0.5s;
 	.million-jobs-main-wrapper .job-details-main-wrapper{
 		margin: auto;
 	}
-	
+
 	.main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 .social-media-icons li .post-btn{
 		width: 130px;
 	}
@@ -210,7 +210,7 @@ $transition: all 0.5s;
 }
 
 
-/*--width 1050 --*/
+
 
 @media (max-width: 1050px) {
 	.main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 nav ul li a span{
@@ -230,10 +230,10 @@ $transition: all 0.5s;
 }
 
 
-/*--width 1024 --*/
+
 
 @media (max-width: 1024px) {
-	.index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
+	.index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
 		width: 75px;
     	height: 75px;
     	line-height: 78px;
@@ -247,10 +247,10 @@ $transition: all 0.5s;
 
 
 
-/*--width 993 --*/
+
 
 @media (max-width: 993px) {
-	
+
 	.main-header-wrapper1 .sb-main-header1 .menu-item-wrapper3 nav ul li a{
 		padding: 34px 7px;
 	}
@@ -262,11 +262,11 @@ $transition: all 0.5s;
 
 // width 991  --*/
 @include for-desktop-up {
-	
+
 	.container{
 		max-width: 900px;
 	}
-	
+
 	.call-now-wrapper:before{
 		display: none;
 	}
@@ -302,7 +302,7 @@ $transition: all 0.5s;
 	    font-size: 12px;
 	}
 	.copy-right-wrapper .copy-right a {
-	   
+
 	    padding-right: 7px;
 	    font-size: 12px;
 	}
@@ -343,7 +343,7 @@ $transition: all 0.5s;
 	.index1-listing-slider-wrapper{
 		margin-top: 80px;
 	}
-	.our-butchery-wrapper .about-img-block{
+	.our-tomameaty-wrapper .about-img-block{
 		margin-top: 30px;
 	}
 	.delivery-way .delivery-box{
@@ -368,7 +368,7 @@ $transition: all 0.5s;
 	.news-blog-wrapper .blog-box .blog-text h4{
 		font-size: 16px;
 	}
-	.index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
+	.index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
 		left: 50%;
     	top: 46%;
 	}
@@ -410,7 +410,7 @@ $transition: all 0.5s;
 	.home-delivery-sec-wrapper .delivery-main-wrapper .delivery-box{
 		width: 50%;
 	}
-	.our-butchery-wrapper .about-text {
+	.our-tomameaty-wrapper .about-text {
 	    padding-top: 0;
 	}
 	.news-blog-wrapper .blog-box{
@@ -468,7 +468,7 @@ $transition: all 0.5s;
 	.location-maib-wrapper .loaction-map{
 		width: 100%;
 	}
-	.index2-our-butchery-wrapper .team-box-wrapper {
+	.index2-our-tomameaty-wrapper .team-box-wrapper {
 	    margin-bottom: 30px;
 	}
 	.product-filter-main-wrapper .tab{
@@ -483,7 +483,7 @@ $transition: all 0.5s;
 	.contact_img_background:before{
 		display: none;
 	}
-	.index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
+	.index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
 		transform: translate(-50%, -50%);
 	    top: 50%;
 	    left: 54%;
@@ -501,15 +501,15 @@ $transition: all 0.5s;
 
 
 @media (max-width: 680px) {
-	
-	
+
+
 	.index1-slider-wrapper{
 		margin-top: 0;
 	}
 	.index1-slider-wrapper .overlay-slider .slider-caption {
 	    padding-top: 80px;
 	}
-	
+
 	.testimonial-client-say-wrapper .testi-slider .navigation-img-wrapper {
 	    top: 68%;
 	}
@@ -524,7 +524,7 @@ $transition: all 0.5s;
 
 
 @media (max-width: 640px) {
-	
+
 	.blog-slider-wrapper .blog-cat{
 		flex-flow: column;
 	}
@@ -547,10 +547,10 @@ $transition: all 0.5s;
 
 
 
-/*---width 580--*/
+
 
 @include for-mobile-up {
-	
+
 }
 
 
@@ -615,7 +615,7 @@ $transition: all 0.5s;
 	.location-maib-wrapper .loaction-map{
 		position: inherit;
 	}
-	
+
 	.index2-slider-wrapper{
 		padding: 125px 0px 120px;
 	}
@@ -647,19 +647,19 @@ $transition: all 0.5s;
 	.customer-blog-wrapper .product-single-wrapper .custom-tabs-prdt{
 		width: 48%;
 	}
-	.our-butchery-wrapper .about-img-block .img2{
+	.our-tomameaty-wrapper .about-img-block .img2{
 		position: inherit;
 	}
-	.our-butchery-wrapper .about-img-block .img2 img{
+	.our-tomameaty-wrapper .about-img-block .img2 img{
 		width: 100%;
 	}
-	.our-butchery-wrapper .about-img-block .img1 img{
+	.our-tomameaty-wrapper .about-img-block .img1 img{
 		width: 100%;
 	}
-	.our-butchery-wrapper .about-img-block{
+	.our-tomameaty-wrapper .about-img-block{
 		height: auto;
 	}
-	.index2-butchery-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
+	.index2-tomameaty-team-wrapper .about-block-wrapper .about-img .overlay1 .popup-youtube{
 		left: 52%;
 	}
 	.shape-wrapper:after{
@@ -677,7 +677,7 @@ $transition: all 0.5s;
 
 
 
-/*-- width 480 --*/
+
 
 @include for-small-mobile-up {
 	.index1-slider-wrapper .overlay-slider .slider-caption {
@@ -723,7 +723,7 @@ $transition: all 0.5s;
 
 
 
-/*-- width 450 --*/
+
 
 @media (max-width: 450px) {
 	.inner-page-main-wrapper .top-pipe-search-wrapper .search-box{
@@ -795,7 +795,7 @@ $transition: all 0.5s;
 }
 
 
-/*-- width 360 --*/
+
 
 @include for-extra-small-mobile-up {
 	.footer-main-wrapper .link h4{
@@ -810,6 +810,6 @@ $transition: all 0.5s;
 }
 
 
-/*--width 320 --*/
+
 
 @include for-extra-small-mobile-up {}

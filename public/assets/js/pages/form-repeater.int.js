@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!*************************************************!*\
   !*** ./resources/js/pages/form-repeater.int.js ***!
   \*************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Form repeater Js File
+
+
+
+
+
 */
 $(document).ready(function () {
   'use strict';
@@ -59,5 +59,5 @@ $(document).ready(function () {
     }]
   });
 });
-/******/ })()
+ })()
 ;

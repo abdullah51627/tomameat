@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!************************************************!*\
   !*** ./resources/js/pages/coming-soon.init.js ***!
   \************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: coming soon Init Js File
+
+
+
+
+
 */
 $('[data-countdown]').each(function () {
   var $this = $(this),
@@ -17,5 +17,5 @@ $('[data-countdown]').each(function () {
     $(this).html(event.strftime('' + '<div class="coming-box">%D <span>Days</span></div> ' + '<div class="coming-box">%H <span>Hours</span></div> ' + '<div class="coming-box">%M <span>Minutes</span></div> ' + '<div class="coming-box">%S <span>Seconds</span></div> '));
   });
 });
-/******/ })()
+ })()
 ;

@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!************************************************!*\
   !*** ./resources/js/pages/fontawesome.init.js ***!
@@ -10,5 +10,5 @@ var icons='{"data":[{"attributes":{"id":"500px","membership":{"free":["brands"],
                 </div>';break;default:regular+='<div class="col-xl-3 col-lg-4 col-sm-6">\
                     <i class="far fa-'+val.id+'"></i> far fa-'+val.id+'\
                 </div>';}});}});$("#solid").html(solid);$("#brand").html(brand);$("#regular").html(regular);
-/******/ })()
+ })()
 ;

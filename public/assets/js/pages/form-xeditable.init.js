@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!***************************************************!*\
   !*** ./resources/js/pages/form-xeditable.init.js ***!
   \***************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Form-Xeditable Js File
+
+
+
+
+
 */
 $(function () {
   //modify buttons style
@@ -72,5 +72,5 @@ $(function () {
     inputclass: 'form-control-sm'
   });
 });
-/******/ })()
+ })()
 ;

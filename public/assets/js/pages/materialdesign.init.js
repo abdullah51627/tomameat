@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!***************************************************!*\
   !*** ./resources/js/pages/materialdesign.init.js ***!
   \***************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Material design Init Js File
+
+
+
+
+
 */
 // icons
 function isNew(icon) {
@@ -23482,5 +23482,5 @@ function getIconItem(icon, isNewIcon) {
     iconsCount++;
   });
 })();
-/******/ })()
+ })()
 ;

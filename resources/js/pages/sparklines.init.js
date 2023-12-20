@@ -1,9 +1,9 @@
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Sparkline chart Init
+
+
+
+
+
 */
 
 
@@ -44,7 +44,7 @@ $(document).ready(function() {
         sliceColors: ['#f1b44c', '#5b73e8', '#e9ecef']
       });
     }
-    
+
     var sparklineCharts2Colors = getChartColorsArray("sparkline2");
       if (sparklineCharts2Colors) {
       $("#sparkline2").sparkline([5,6,2,8,9,4,7,10,11,12,10,4,7,10], {
@@ -55,7 +55,7 @@ $(document).ready(function() {
         barColor: '#f1b44c'
       });
     }
-  
+
 
     var sparklineCharts3Colors = getChartColorsArray("sparkline3");
     if (sparklineCharts3Colors) {
@@ -110,7 +110,7 @@ $(document).ready(function() {
         highlightLineColor: 'rgba(0,0,0,.1)',
         highlightSpotColor: 'rgba(0,0,0,.2)',
       });
-  
+
       $('#sparkline5').sparkline([0, 13, 10, 14, 15, 10, 18, 20, 0], {
         type: 'line',
         width: '100%',
@@ -124,7 +124,7 @@ $(document).ready(function() {
         highlightSpotColor: 'rgba(0,0,0,.2)',
       });
     }
-    
+
     var sparklineCharts6Colors = getChartColorsArray("sparkline6");
     if (sparklineCharts6Colors) {
       $("#sparkline6").sparkline([4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 6, 3, 4, 5, 8, 7, 6, 9, 3, 2, 4, 1, 5, 6, 4, 3, 7], {
@@ -134,7 +134,7 @@ $(document).ready(function() {
         lineColor: '#ffffff'
       });
     }
-    
+
     var sparklineCharts7Colors = getChartColorsArray("sparkline7");
         if (sparklineCharts7Colors) {
       $('#sparkline7').sparkline([10,12,12,9,7], {
@@ -175,16 +175,16 @@ $(document).ready(function() {
         zeroAxis: false
       });
     }
-  
-  
-  
+
+
+
     }
     var sparkResize;
-  
+
     $(window).resize(function(e) {
       clearTimeout(sparkResize);
       sparkResize = setTimeout(SparklineCharts, 500);
     });
     SparklineCharts();
-  
+
   });

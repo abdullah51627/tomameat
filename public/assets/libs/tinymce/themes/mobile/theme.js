@@ -1337,7 +1337,7 @@
       return has(component.element, swapConfig.omega);
     };
 
-    var SwapApis = /*#__PURE__*/Object.freeze({
+    var SwapApis = Object.freeze({
         __proto__: null,
         toAlpha: toAlpha,
         toOmega: toOmega,
@@ -2800,7 +2800,7 @@
         })]);
     };
 
-    var ActiveReceiving = /*#__PURE__*/Object.freeze({
+    var ActiveReceiving = Object.freeze({
         __proto__: null,
         events: events$a
     });
@@ -3059,7 +3059,7 @@
       set$6(component, toggleConfig, toggleState, toggleConfig.selected);
     };
 
-    var ToggleApis = /*#__PURE__*/Object.freeze({
+    var ToggleApis = Object.freeze({
         __proto__: null,
         onLoad: onLoad$5,
         toggle: toggle,
@@ -3081,7 +3081,7 @@
       ]));
     };
 
-    var ActiveToggle = /*#__PURE__*/Object.freeze({
+    var ActiveToggle = Object.freeze({
         __proto__: null,
         exhibit: exhibit$5,
         events: events$9
@@ -3193,7 +3193,7 @@
       return hasFocus(component.element);
     };
 
-    var FocusApis = /*#__PURE__*/Object.freeze({
+    var FocusApis = Object.freeze({
         __proto__: null,
         focus: focus$2,
         blur: blur,
@@ -3213,7 +3213,7 @@
         })] : []));
     };
 
-    var ActiveFocus = /*#__PURE__*/Object.freeze({
+    var ActiveFocus = Object.freeze({
         __proto__: null,
         exhibit: exhibit$4,
         events: events$7
@@ -3610,7 +3610,7 @@
       }));
     };
 
-    var HighlightApis = /*#__PURE__*/Object.freeze({
+    var HighlightApis = Object.freeze({
         __proto__: null,
         dehighlightAll: dehighlightAll,
         dehighlight: dehighlight,
@@ -3980,7 +3980,7 @@
       return spec.state(spec);
     };
 
-    var KeyingState = /*#__PURE__*/Object.freeze({
+    var KeyingState = Object.freeze({
         __proto__: null,
         flatgrid: flatgrid$1,
         init: init$5
@@ -4461,7 +4461,7 @@
     var menu = MenuType.schema();
     var special = SpecialType.schema();
 
-    var KeyboardBranches = /*#__PURE__*/Object.freeze({
+    var KeyboardBranches = Object.freeze({
         __proto__: null,
         acyclic: acyclic,
         cyclic: cyclic,
@@ -5014,7 +5014,7 @@
       return derive$3([abort(selectstart(), always)]);
     };
 
-    var ActiveUnselecting = /*#__PURE__*/Object.freeze({
+    var ActiveUnselecting = Object.freeze({
         __proto__: null,
         events: events$6,
         exhibit: exhibit$3
@@ -5236,7 +5236,7 @@
       return repState;
     };
 
-    var RepresentApis = /*#__PURE__*/Object.freeze({
+    var RepresentApis = Object.freeze({
         __proto__: null,
         onLoad: onLoad$4,
         onUnload: onUnload$2,
@@ -5257,7 +5257,7 @@
       return derive$3(es);
     };
 
-    var ActiveRepresenting = /*#__PURE__*/Object.freeze({
+    var ActiveRepresenting = Object.freeze({
         __proto__: null,
         events: events$5
     });
@@ -5334,7 +5334,7 @@
       return spec.store.manager.state(spec);
     };
 
-    var RepresentState = /*#__PURE__*/Object.freeze({
+    var RepresentState = Object.freeze({
         __proto__: null,
         memory: memory,
         dataset: dataset,
@@ -5850,7 +5850,7 @@
       'left': Optional.some(setToLEdge)
     };
 
-    var HorizontalModel = /*#__PURE__*/Object.freeze({
+    var HorizontalModel = Object.freeze({
         __proto__: null,
         setValueFrom: setValueFrom$2,
         setToMin: setToMin$2,
@@ -5971,7 +5971,7 @@
       'left': Optional.none()
     };
 
-    var VerticalModel = /*#__PURE__*/Object.freeze({
+    var VerticalModel = Object.freeze({
         __proto__: null,
         setValueFrom: setValueFrom$1,
         setToMin: setToMin$1,
@@ -6052,7 +6052,7 @@
       'left': Optional.some(setToLEdgeXY)
     };
 
-    var TwoDModel = /*#__PURE__*/Object.freeze({
+    var TwoDModel = Object.freeze({
         __proto__: null,
         setValueFrom: setValueFrom,
         setToMin: setToMin,
@@ -6928,7 +6928,7 @@
       return composeConfig.find(component);
     };
 
-    var ComposeApis = /*#__PURE__*/Object.freeze({
+    var ComposeApis = Object.freeze({
         __proto__: null,
         getCurrent: getCurrent
     });
@@ -7085,7 +7085,7 @@
       });
     };
 
-    var ActiveTabstopping = /*#__PURE__*/Object.freeze({
+    var ActiveTabstopping = Object.freeze({
         __proto__: null,
         exhibit: exhibit$2
     });
@@ -7216,7 +7216,7 @@
       f(component, disableConfig);
     };
 
-    var DisableApis = /*#__PURE__*/Object.freeze({
+    var DisableApis = Object.freeze({
         __proto__: null,
         enable: enable,
         disable: disable,
@@ -7237,7 +7237,7 @@
       ]);
     };
 
-    var ActiveDisable = /*#__PURE__*/Object.freeze({
+    var ActiveDisable = Object.freeze({
         __proto__: null,
         exhibit: exhibit$1,
         events: events$3
@@ -7601,7 +7601,7 @@
         }
       })]);
 
-    var DefaultEvents = /*#__PURE__*/Object.freeze({
+    var DefaultEvents = Object.freeze({
         __proto__: null,
         events: events$2
     });
@@ -8485,7 +8485,7 @@
       });
     };
 
-    var ReplaceApis = /*#__PURE__*/Object.freeze({
+    var ReplaceApis = Object.freeze({
         __proto__: null,
         append: append,
         prepend: prepend,
@@ -9122,7 +9122,7 @@
       return getOpt(comp.element, transConfig.stateAttr);
     };
 
-    var TransitionApis = /*#__PURE__*/Object.freeze({
+    var TransitionApis = Object.freeze({
         __proto__: null,
         findRoute: findRoute,
         disableTransition: disableTransition,
@@ -9153,7 +9153,7 @@
       ]);
     };
 
-    var ActiveTransitioning = /*#__PURE__*/Object.freeze({
+    var ActiveTransitioning = Object.freeze({
         __proto__: null,
         events: events$1
     });
@@ -11108,7 +11108,7 @@
       f(component, slideConfig, slideState);
     };
 
-    var SlidingApis = /*#__PURE__*/Object.freeze({
+    var SlidingApis = Object.freeze({
         __proto__: null,
         refresh: refresh$1,
         grow: grow,
@@ -11147,7 +11147,7 @@
         })]);
     };
 
-    var ActiveSliding = /*#__PURE__*/Object.freeze({
+    var ActiveSliding = Object.freeze({
         __proto__: null,
         exhibit: exhibit,
         events: events
@@ -11198,7 +11198,7 @@
       });
     };
 
-    var SlidingState = /*#__PURE__*/Object.freeze({
+    var SlidingState = Object.freeze({
         __proto__: null,
         init: init$1
     });

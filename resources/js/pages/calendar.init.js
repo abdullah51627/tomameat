@@ -1,9 +1,9 @@
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Calendar init js
+
+
+
+
+
 */
 
 !function($) {
@@ -24,7 +24,7 @@ File: Calendar init js
             var selectedEvent = null;
             var newEventData = null;
             var eventObject = null;
-            /* initialize the calendar */
+
 
             var date = new Date();
             var d = date.getDate();
@@ -138,7 +138,7 @@ File: Calendar init js
             });
             calendar.render();
 
-             /*Add new event*/
+
             // Form to add new event
 
             $(formEvent).on('submit', function(ev) {

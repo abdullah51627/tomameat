@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!******************************************!*\
   !*** ./resources/js/pages/modal.init.js ***!
   \******************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Material design Init Js File
+
+
+
+
+
 */
 var exampleModal = document.getElementById('exampleModal');
 exampleModal.addEventListener('show.bs.modal', function (event) {
@@ -25,5 +25,5 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   modalTitle.textContent = 'New message to ' + recipient;
   modalBodyInput.value = recipient;
 });
-/******/ })()
+ })()
 ;

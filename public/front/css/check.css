@@ -29,11 +29,11 @@
   display: none;
   color: #797979 !important;
 }
-/* selects all of the text within the input element and changes the color of the text */
+
 .cat label input + span{color: #797979;}
 
 
-/* This will declare how a selected input will look giving generic properties */
+
 .cat input:checked + span {
     color: #ffffff;
 

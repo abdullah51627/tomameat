@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiRes;
 use App\Models\Product;
 //use Darryldecode\Cart\Cart;
-use Darryldecode\Cart\Cart;
+//use Darryldecode\Cart\Cart;
 use Illuminate\Http\Request;
 
 class CartController extends Controller

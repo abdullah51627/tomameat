@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!*****************************************!*\
   !*** ./resources/js/pages/flot.init.js ***!
   \*****************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Flot chart init Js File
+
+
+
+
+
 */
 function getChartColorsArray(chartId) {
   if (document.getElementById(chartId) !== null) {
@@ -349,5 +349,5 @@ function ($) {
 
   $.FlotChart.init();
 }(window.jQuery);
-/******/ })()
+ })()
 ;

@@ -1,10 +1,10 @@
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
+
+
 Version: 2.4.0
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Main Js File
+
+
+
 */
 
 
@@ -93,7 +93,7 @@ File: Main Js File
         $('[data-bs-toggle="fullscreen"]').on("click", function (e) {
             e.preventDefault();
             $('body').toggleClass('fullscreen-enable');
-            if (!document.fullscreenElement && /* alternative standard method */ !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+            if (!document.fullscreenElement &&  !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
                 if (document.documentElement.requestFullscreen) {
                     document.documentElement.requestFullscreen();
                 } else if (document.documentElement.mozRequestFullScreen) {

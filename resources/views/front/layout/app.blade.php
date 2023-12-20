@@ -56,18 +56,23 @@
                             <ul class="contact-details">
                                 <li class="hidden-xs"><a href="#">Family TomaMeats Est. 1901</a>
                                 </li>
-                                <li><a href="#"><i class="fa fa-phone"></i> <b>+1 800 123 4567</b> (Open Right Now)</a>
+                                <li><a href="#"><i class="fa fa-phone"></i> <b>+92 331 379 9210</b> (Open Right Now)</a>
                                 </li>
                                 <li class="hidden-xs"><a href="#"><i
-                                            class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;hello@example.com</a>
+                                            class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;info@tomameats.com</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-6">
                             <ul class="social-list">
                                 <li>
-                                    <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>
-                                        Login</a>
+                                    @if(auth()->check())
+                                    <a href="/admin"><i class="fa fa-user" aria-hidden="true"></i>
+                                        {{ucfirst(auth()->user()->name)}} </a>
+                                    @else
+                                        <a href="/login"><i class="fa fa-user" aria-hidden="true"></i>
+                                            Login</a>
+                                    @endif
                                 </li>
                             </ul>
                         </div>
@@ -80,19 +85,17 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="index1-logo">
                                 <a href="/">
-                                    <img src="{{asset('front/images/logo.jpg')}}" alt="logo">
+                                    <img src="{{asset('front/images/logo.png')}}" alt="logo">
                                 </a>
                             </div>
                             <nav class="navbar navbar-expand-lg">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item  menu-click5 ps-rel">
-                                        <a class="nav-link" href="javascript:;">Home <span><i
-                                                    class="fas fa-chevron-down"></i></span></a>
-                                        <ul class="dropdown-items menu-open5">
-                                            <li><a href="/"> Home 01</a></li>
-                                            <li><a href="index2.html"> Home 02</a></li>
-                                        </ul>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/">Home</a>
                                     </li>
+
                                     <li class="nav-item">
                                         <a class="nav-link" href="about-us.html">About</a>
                                     </li>
@@ -219,7 +222,7 @@
                     <div class=" col-md-4 col-sm-4 col-6">
                         <div class="mobile-logo">
                             <a href="/">
-                                <img src="{{asset('front/images/logo.jpg')}}" alt="logo">
+                                <img src="{{asset('front/images/logo.png')}}" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -267,7 +270,7 @@
         </div>
         <div id="sidebar">
             <div class="sidebar_logo">
-                <a href="/"><img src="{{asset('front/images/logo.jpg')}}" alt="img"></a>
+                <a href="/"><img src="{{asset('front/images/logo.png')}}" alt="img"></a>
             </div>
             <div id="toggle_close">&times;</div>
             <div id='cssmenu'>
@@ -317,7 +320,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="link">
                     <span>Call Now</span>
-                    <h4>+1 800 123 4567</h4>
+                    <h4>+92 331 379 9210</h4>
                     <span>Get Special Email Offers</span>
                     <div class="line">
                         <img src="{{asset('front/images/4.png')}}" alt="line">

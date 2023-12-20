@@ -175,16 +175,16 @@
                         <!--  -->
                         <div class="custom-pegination">
                             {{$products->links()}}
-                            <ul>
-                                <li class="preious"> <a href="javascript:;"> <span>
-                                 Previous</span> </a> </li>
-                                <li class="active"> <a href="javascript:;"> <span>1</span> </a> </li>
-                                <li> <a href="javascript:;"> <span>2</span> </a> </li>
-                                <li> <a href="javascript:;"> <span>3</span> </a> </li>
-                                <li> <a href="javascript:;"> <span>4</span> </a> </li>
-                                <li> <a href="javascript:;"> <span>5</span> </a> </li>
-                                <li class="preious active"> <a href="javascript:;"> <span>Next </span> </a> </li>
-                            </ul>
+{{--                            <ul>--}}
+{{--                                <li class="preious"> <a href="javascript:;"> <span>--}}
+{{--                                 Previous</span> </a> </li>--}}
+{{--                                <li class="active"> <a href="javascript:;"> <span>1</span> </a> </li>--}}
+{{--                                <li> <a href="javascript:;"> <span>2</span> </a> </li>--}}
+{{--                                <li> <a href="javascript:;"> <span>3</span> </a> </li>--}}
+{{--                                <li> <a href="javascript:;"> <span>4</span> </a> </li>--}}
+{{--                                <li> <a href="javascript:;"> <span>5</span> </a> </li>--}}
+{{--                                <li class="preious active"> <a href="javascript:;"> <span>Next </span> </a> </li>--}}
+{{--                            </ul>--}}
                         </div>
                     </div>
                 </div>

@@ -26,8 +26,8 @@ ul {
   color: #111111;
 }
 
-/*===================================== ACCORDION PAGE START ================================*/
-/*============================ first accordion ==============================*/
+
+
 .accor-heading {
   margin-bottom: 30px;
 }
@@ -69,7 +69,7 @@ ul {
   border-left: 2px solid #ef5350;
 }
 
-/*============================ second accordion ==============================*/
+
 .accordion2-wrapper {
   background-color: #232323;
 }
@@ -137,7 +137,7 @@ ul {
   display: none;
 }
 
-/*============================ Third accordion ==============================*/
+
 .accordion3-wrapper {
   background-color: #f7f7f7;
 }
@@ -186,7 +186,7 @@ ul {
           transform: rotate(90deg);
 }
 
-/*============================ Fourth accordion ==============================*/
+
 .accordion4-wrapper .accordion-button:focus {
   border: none;
   -webkit-box-shadow: none;
@@ -250,7 +250,7 @@ ul {
   font-size: 24px;
 }
 
-/*============================ Five accordion ==============================*/
+
 .accordion5-wrapper {
   background-color: #ef5350;
 }
@@ -325,8 +325,8 @@ ul {
   color: #ffffff;
 }
 
-/*=================================== ACCORDION PAGE END ===============================*/
-/*======================BUTTON PAGE START ==============================*/
+
+
 .section-heading {
   margin-bottom: 50px;
 }
@@ -379,7 +379,7 @@ ul {
   padding: 6px 16px;
 }
 
-/* second button section */
+
 .button2-wrapper {
   text-align: center;
   background-color: #f7f7f7;
@@ -419,7 +419,7 @@ ul {
   border-radius: 50px;
 }
 
-/* third button section */
+
 .button3-wrapper {
   text-align: center;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#80063F), color-stop(#FC035A), to(#FFBF00));
@@ -484,7 +484,7 @@ ul {
   border: 2px solid #ffffff;
 }
 
-/* fourth button section */
+
 .button4-wrapper {
   text-align: center;
 }
@@ -532,7 +532,7 @@ ul {
   color: #ffffff;
 }
 
-/*fifth button section*/
+
 .button5-wrapper {
   text-align: center;
   background-color: #232323;
@@ -624,7 +624,7 @@ ul {
   background-position: right center;
 }
 
-/*six button section*/
+
 .button6-wrapper {
   text-align: center;
 }
@@ -713,7 +713,7 @@ ul {
   color: #ffffff;
 }
 
-/*seven button section*/
+
 .button7-wrapper {
   text-align: center;
   background-color: #f7f7f7;
@@ -875,7 +875,7 @@ ul {
           align-items: center;
 }
 
-/* Nine button section */
+
 .button9-wrapper {
   text-align: center;
 }
@@ -932,7 +932,7 @@ ul {
   width: 100%;
 }
 
-/*Ten button section*/
+
 .button10-wrapper {
   text-align: center;
   background-color: #232323;
@@ -988,7 +988,7 @@ ul {
   text-transform: uppercase;
 }
 
-/*Eleven button section */
+
 .button11-wrapper {
   text-align: center;
   background-color: #f7f7f7;
@@ -1026,7 +1026,7 @@ ul {
   color: #ffffff;
 }
 
-/*Eleven button section*/
+
 .button12-wrapper {
   text-align: center;
 }
@@ -1057,15 +1057,15 @@ ul {
           box-shadow: none;
 }
 
-/*RESPONSIVE CSS*/
-/*--width 1199 --*/
+
+
 @media (max-width: 1199px) {
   .btn-sizes a {
     font-size: 14px;
   }
 }
 
-/*--width 991 --*/
+
 @media (max-width: 991px) {
   .btn-sizes a {
     display: block !important;
@@ -1081,8 +1081,8 @@ ul {
   }
 }
 
-/*======================BUTTON PAGE END =======================*/
-/*=====================================CLIENT PAGE START ===============================*/
+
+
 .client1-wrapper {
   background-color: #f7f7f7;
   text-align: center;
@@ -1201,14 +1201,14 @@ ul {
   width: auto;
 }
 
-/*=================================== CLIENT PAGE END ===============================*/
-/*======================== Google Map section ===================*/
+
+
 .g-map1-section .h-500px {
   height: 500px;
 }
 
-/*=========================== TAB PAGE START ====================*/
-/*------ tab-one ------*/
+
+
 .tab-one-wrapper .tab-one .nav-tabs {
   border: none;
 }
@@ -1302,7 +1302,7 @@ ul {
   width: 100%;
 }
 
-/*-------- tab-two ------*/
+
 .tab-two-wrapper {
   background-color: #f7f7f7;
 }
@@ -1377,8 +1377,8 @@ ul {
   padding: 12px 0 0 0;
 }
 
-/*------ tab-two-end -----*/
-/*------- tab-three-start ------*/
+
+
 .tab-three-wrapper .nav-pills .nav-item {
   padding: 0 30px;
 }
@@ -1419,8 +1419,8 @@ ul {
   background-color: #232323;
 }
 
-/*-------- tab-four-start --------*/
-/*------- tab-five-start ---------*/
+
+
 .tab-five-wrapper .nav-pills {
   border-top: 1px solid #80808082;
   border-bottom: 1px solid #80808082;
@@ -1512,8 +1512,8 @@ ul {
   }
 }
 
-/*==================== FORM PAGE START ====================*/
-/*--------- form-one-start ---------*/
+
+
 .form-control {
   padding: 12px 10px;
 }
@@ -1580,7 +1580,7 @@ ul {
   border: 1px solid #86b7fe;
 }
 
-/*--------- form-two-start ---------*/
+
 .form-two-wrapper {
   background-image: url("../images/form/bg-two.jpg");
   background-size: cover;
@@ -1598,7 +1598,7 @@ ul {
   border: 1px solid #86b7fe;
 }
 
-/*------- form-three-start --------*/
+
 .form-three-wrapper .form-three form textarea {
   height: 195px;
 }
@@ -1607,7 +1607,7 @@ ul {
   border: 1px solid #86b7fe;
 }
 
-/*----- form-four-start ------*/
+
 .form-four-wrapper {
   background-color: #1f232c;
 }
@@ -1672,9 +1672,9 @@ ul {
   border: 1px solid #86b7fe;
 }
 
-/*========================== FORM PAGE END ====================*/
-/*===================== COUNTER PAGE START ==================*/
-/*------- counter-one-start -------*/
+
+
+
 .counter-one-wrapper .counter-one {
   text-align: center;
 }
@@ -1713,7 +1713,7 @@ ul {
   margin-top: -5px;
 }
 
-/*------ counter-two-start -------*/
+
 .counter-two-wrapper {
   background-color: #f9f9f9;
 }
@@ -1772,7 +1772,7 @@ ul {
   background-color: #ea6a38;
 }
 
-/*------ counter-three-start -------*/
+
 .counter-three-wrapper {
   background-color: #1f232c;
 }
@@ -1810,7 +1810,7 @@ ul {
   text-transform: uppercase;
 }
 
-/*------ counter-four-start -------*/
+
 .counter-four-wrapper .counter-four {
   text-align: center;
 }
@@ -1871,9 +1871,9 @@ ul {
   color: #fff;
 }
 
-/*===================== COUNTER PAGE END ==================*/
-/*================= COUNT-DOWN PAGE START ================*/
-/*-------- countdown-first-start --------*/
+
+
+
 .count-one-wrapper #countdown-one {
   text-align: center;
   background: #222;
@@ -1976,7 +1976,7 @@ ul {
   display: inline-block;
 }
 
-/*---- count-down-two-start -----*/
+
 .count-two-wrapper {
   text-align: center;
   background-color: #232323;
@@ -2019,8 +2019,8 @@ ul {
   color: #abcd58;
 }
 
-/*================= PRICING PAGE START ================*/
-/*-------- pricing-first-start --------*/
+
+
 .price-btn {
   border: 2px solid #262b35;
   padding: 8px 22px;
@@ -2108,7 +2108,7 @@ ul {
   -o-transition: all .3s ease-in-out;
 }
 
-/*-------- pricing-two-start --------*/
+
 .box-two {
   padding-right: 0px;
 }
@@ -2173,7 +2173,7 @@ ul {
   -o-transition: all .3s ease-in-out;
 }
 
-/*-------- pricing-three-start --------*/
+
 .pricing-three-wrapper .pricing-three .pricing-table-three {
   -webkit-box-shadow: 0 0 25px #00000014;
           box-shadow: 0 0 25px #00000014;
@@ -2281,8 +2281,8 @@ ul {
   color: #ffffff;
 }
 
-/*-/================= TESTIMONIAL PAGE START ================*/
-/*-------- testimonial-first-start --------*/
+
+
 .testimonial-one-wrapper {
   background-color: #f7f7f7;
 }
@@ -2349,7 +2349,7 @@ ul {
   font-weight: 500;
 }
 
-/*------------ testimonial-two -----------*/
+
 .testimonial-two-wrapper {
   background-color: #232323;
 }
@@ -2458,7 +2458,7 @@ ul {
   top: 220px;
 }
 
-/*--------- testimonial-three-start ---------*/
+
 .testimonial-three-wrapper {
   background-color: #dbdbdb;
 }
@@ -2534,7 +2534,7 @@ ul {
   font-weight: 500;
 }
 
-/*------- testimonial-four-start -------*/
+
 .testimonial-four-wrapper .test-bg {
   background-image: url("../images/testimonial/image_bg.jpg");
   background-repeat: no-repeat;
@@ -2614,7 +2614,7 @@ ul {
   transition: all 0.5s;
 }
 
-/*------- testimonial-five-start -------*/
+
 .testimonial-five-wrapper .testimonial-five .owl-carousel .item .test-five-wrapper {
   text-align: center;
 }
@@ -2669,7 +2669,7 @@ ul {
   right: -52px;
 }
 
-/*--width 991 --*/
+
 @media (max-width: 991px) {
   .tab-two-wrapper .tab-content .tab-two-head .tab-two-head-wrapper {
     padding: 20px 0;
@@ -2728,7 +2728,7 @@ ul {
   }
 }
 
-/*--------- ALERT PAGE START ---------*/
+
 .al-section-1 .alert-section-1 {
   margin-top: 40px;
 }
@@ -2767,7 +2767,7 @@ ul {
   font-size: 18px;
 }
 
-/*--------section-top-padding------*/
+
 .al-section-2 {
   background-color: #f9f9f9;
 }
@@ -2837,7 +2837,7 @@ ul {
   border-radius: 40px;
 }
 
-/*--------section-top-padding------*/
+
 .al-section-3 span i {
   padding: 21px;
   color: #fff;
@@ -2923,7 +2923,7 @@ ul {
   top: 0;
 }
 
-/*----alert section-4----*/
+
 .al-section-4 {
   background-color: #f9f9f9;
 }
@@ -2982,7 +2982,7 @@ ul {
   color: #5581c4;
 }
 
-/*----alert section-5----*/
+
 .al-section-5 .alert-img {
   float: left;
   padding: 0px 25px;
@@ -3113,7 +3113,7 @@ ul {
   }
 }
 
-/*--------- text-box-start ----------*/
+
 .team-one-wrapper {
   padding-bottom: 150px;
 }
@@ -3540,7 +3540,7 @@ ul {
   transition: all 0.5s;
 }
 
-/*--------- social icons css start ---------*/
+
 .icon1-main-wrapper .social-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4066,7 +4066,7 @@ ul {
   top: 0;
 }
 
-/* responsive of shortcode */
+
 @media (max-width: 767px) {
   .icon1-main-wrapper .social-icons ul li, .icon2-main-wrapper .social-icons ul li, .icon3-main-wrapper .social-icons ul li, .icon4-main-wrapper .social-icons ul li, .icon5-main-wrapper .social-icons ul li, .icon7-main-wrapper .social-icons ul li {
     padding: 12px;
@@ -4106,7 +4106,7 @@ ul {
   }
 }
 
-/*-------- gallery section -----------*/
+
 .gallery1-wrapper .img-gallery-wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4197,7 +4197,7 @@ ul {
   opacity: .15;
 }
 
-/*------------------- gallery section -----------*/
+
 .gallery1-wrapper .img-gallery-wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4289,8 +4289,8 @@ ul {
   opacity: .15;
 }
 
-/* gallery second start  */
-/* section_1 css */
+
+
 .gallery2-wrapper {
   background-color: #e9e9e9;
 }
@@ -4367,7 +4367,7 @@ ul {
   color: #fff;
 }
 
-/* section_1 css end*/
+
 .gallery3-wrapper .img-gallery-wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4550,8 +4550,8 @@ ul {
   transition: all 0.5s;
 }
 
-/* section_4 css end*/
-/* section_6 css start*/
+
+
 .gallery4-wrapper {
   background-color: #e9e9e9;
 }
@@ -4695,8 +4695,8 @@ ul {
           transform: scale(1.1, 1.1);
 }
 
-/* section_6 css end*/
-/* media query css for mobile */
+
+
 @media (max-width: 991px) {
   .gallery1-wrapper .img-gallery-wrapper ul {
     display: block;
@@ -4763,7 +4763,7 @@ ul {
   }
 }
 
-/*===========================pricing table css start=============================*/
+
 .p-top-padding {
   padding-top: 40px;
 }
@@ -4772,7 +4772,7 @@ ul {
   padding-bottom: 40px;
 }
 
-/*---pricing page first section ----*/
+
 .pt-section-1 .p-box-1 {
   height: 660px;
   margin-top: 20px;
@@ -4867,7 +4867,7 @@ ul {
           transition-delay: 0s, 0.25s, 0s;
 }
 
-/*----------Animation Css over--------*/
+
 .pt-section-2 {
   background-color: #e9e9e9;
 }
@@ -4975,7 +4975,7 @@ ul {
   height: 100%;
 }
 
-/*------------------- 3rd style -------------------*/
+
 .pt-section-3 {
   text-align: center;
 }
@@ -5131,7 +5131,7 @@ ul {
   color: #fff;
 }
 
-/*------------------- fifth table css -----*/
+
 .pt-section-5 .p-box-5 {
   margin-top: 20px;
   background-color: #444444;
@@ -5206,7 +5206,7 @@ ul {
   }
 }
 
-/*------------ icon page css start ----------*/
+
 .ic-section-1 .icon-1 {
   height: 80px;
   width: 80px;
@@ -5648,9 +5648,9 @@ ul {
   }
 }
 
-/*------------- typography page  start -----------*/
-/*------------------ list-page-start -----------*/
-/*------------------- list-one ------------------*/
+
+
+
 .list-main-wrapper-one {
   background-color: #fafafa;
 }
@@ -5717,7 +5717,7 @@ ul {
   opacity: 1;
 }
 
-/*--list-two--*/
+
 .list-main-wrapper-two .list-two-wrapper {
   margin-top: 25px;
 }
@@ -5735,7 +5735,7 @@ ul {
   position: relative;
 }
 
-/*--  list-three */
+
 .list-main-wrapper-three {
   background-color: #fafafa;
 }
@@ -5763,7 +5763,7 @@ ul {
   font-size: 18px;
 }
 
-/*--  list-four --*/
+
 .list-main-wrapper-four {
   background-color: #f7f7f7;
 }
@@ -5865,4 +5865,3 @@ ul {
             justify-content: center;
   }
 }
-/*# sourceMappingURL=shortcode.css.map */

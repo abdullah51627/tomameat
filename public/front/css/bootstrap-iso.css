@@ -5,8 +5,8 @@
 */
 
 .bootstrap-iso {
-  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-  /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+
 }
 .bootstrap-iso{
   font-family: sans-serif;
@@ -2665,7 +2665,7 @@
   opacity: 1;
 }
 .bootstrap-iso textarea.form-control {
-  height: auto !important; /*formden tweak*/
+  height: auto !important;
 }
 .bootstrap-iso input[type="search"] {
   -webkit-appearance: none;

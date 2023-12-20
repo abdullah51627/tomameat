@@ -40,3 +40,10 @@ Route::post('cart-remove', [CartController::class, 'removeCart'])->name('cart.re
 Route::post('cart-clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
 Route::get("/shop",[\App\Http\Controllers\HomeController::class,'shop']);
+Route::any("/checkout",[\App\Http\Controllers\HomeController::class,'checkout'])->name('checkout');
+
+//// Registration Routes...
+//Route::get('register', [
+//    'as' => 'register',
+//    'uses' => 'Auth\RegisterController@showRegistrationForm'
+//]);

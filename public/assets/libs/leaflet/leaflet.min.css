@@ -1,4 +1,4 @@
-/* required styles */
+
 
 .leaflet-pane,
 .leaflet-tile,
@@ -25,15 +25,15 @@
 	        user-select: none;
 	  -webkit-user-drag: none;
 	}
-/* Prevents IE11 from highlighting tiles in blue */
+
 .leaflet-tile::selection {
 	background: transparent;
 }
-/* Safari renders non-retina tile on retina better with this, but Chrome is worse */
+
 .leaflet-safari .leaflet-tile {
 	image-rendering: -webkit-optimize-contrast;
 	}
-/* hack that prevents hw layers "stretching" when loading new tiles */
+
 .leaflet-safari .leaflet-tile-container {
 	width: 1600px;
 	height: 1600px;
@@ -43,8 +43,8 @@
 .leaflet-marker-shadow {
 	display: block;
 	}
-/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */
-/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */
+
+
 .leaflet-container .leaflet-overlay-pane svg {
 	max-width: none !important;
 	max-height: none !important;
@@ -66,7 +66,7 @@
 	}
 .leaflet-container.leaflet-touch-drag {
 	-ms-touch-action: pinch-zoom;
-	/* Fallback for FF which doesn't support pinch-zoom */
+
 	touch-action: none;
 	touch-action: pinch-zoom;
 }
@@ -94,7 +94,7 @@
 	     box-sizing: border-box;
 	z-index: 800;
 	}
-/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+
 .leaflet-overlay-pane svg {
 	-moz-user-select: none;
 	}
@@ -122,12 +122,12 @@
 	}
 
 
-/* control positioning */
+
 
 .leaflet-control {
 	position: relative;
 	z-index: 800;
-	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: visiblePainted;
 	pointer-events: auto;
 	}
 .leaflet-top,
@@ -169,7 +169,7 @@
 	}
 
 
-/* zoom and fade animations */
+
 
 .leaflet-fade-anim .leaflet-popup {
 	opacity: 0;
@@ -206,7 +206,7 @@ svg.leaflet-zoom-animated {
 	}
 
 
-/* cursors */
+
 
 .leaflet-interactive {
 	cursor: pointer;
@@ -233,7 +233,7 @@ svg.leaflet-zoom-animated {
 	cursor:         grabbing;
 	}
 
-/* marker & overlays interactivity */
+
 .leaflet-marker-icon,
 .leaflet-marker-shadow,
 .leaflet-image-layer,
@@ -246,11 +246,11 @@ svg.leaflet-zoom-animated {
 .leaflet-image-layer.leaflet-interactive,
 .leaflet-pane > svg path.leaflet-interactive,
 svg.leaflet-image-layer.leaflet-interactive path {
-	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: visiblePainted;
 	pointer-events: auto;
 	}
 
-/* visual tweaks */
+
 
 .leaflet-container {
 	background: #ddd;
@@ -265,7 +265,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* general typography */
+
 .leaflet-container {
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 12px;
@@ -274,7 +274,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* general toolbar styles */
+
 
 .leaflet-bar {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
@@ -330,7 +330,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-bottom-right-radius: 2px;
 	}
 
-/* zoom control */
+
 
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
@@ -343,7 +343,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* layers control */
+
 
 .leaflet-control-layers {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
@@ -397,13 +397,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	margin: 5px -10px 5px -6px;
 	}
 
-/* Default icon URLs */
-.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
+
+.leaflet-default-icon-path {
 	background-image: url(images/marker-icon.png);
 	}
 
 
-/* attribution and scale controls */
+
 
 .leaflet-container .leaflet-control-attribution {
 	background: #fff;
@@ -466,7 +466,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* popup */
+
 
 .leaflet-popup {
 	position: absolute;
@@ -560,7 +560,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* div icon */
+
 
 .leaflet-div-icon {
 	background: #fff;
@@ -568,8 +568,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 
 
-/* Tooltip */
-/* Base styles for the element that has a tooltip */
+
+
 .leaflet-tooltip {
 	position: absolute;
 	padding: 6px;
@@ -600,7 +600,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	content: "";
 	}
 
-/* Directions */
+
 
 .leaflet-tooltip-bottom {
 	margin-top: 6px;
@@ -646,10 +646,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-right-color: #fff;
 	}
 
-/* Printing */
-	
+
+
 @media print {
-	/* Prevent printers from removing background-images of controls. */
+
 	.leaflet-control {
 		-webkit-print-color-adjust: exact;
 		color-adjust: exact;

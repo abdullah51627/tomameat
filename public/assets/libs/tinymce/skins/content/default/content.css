@@ -12,7 +12,7 @@ body {
 table {
   border-collapse: collapse;
 }
-/* Apply a default padding if legacy cellpadding attribute is missing */
+
 table:not([cellpadding]) th,
 table:not([cellpadding]) td {
   padding: 0.4rem;

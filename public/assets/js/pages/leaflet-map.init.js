@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!************************************************!*\
   !*** ./resources/js/pages/leaflet-map.init.js ***!
   \************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: leaflet init js
+
+
+
+
+
 */
 // leaflet-map
 var mymap = L.map('leaflet-map').setView([51.505, -0.09], 13);
@@ -135,5 +135,5 @@ var overlays = {
   "Cities": cities
 };
 L.control.layers(baseLayers, overlays).addTo(layergroupcontrolmap);
-/******/ })()
+ })()
 ;

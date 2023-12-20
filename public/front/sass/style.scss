@@ -1,25 +1,5 @@
-/*-------------------------------------
-    
-	Author: Webstrot Butcher
-	Copyright © 2022-23
-	
----------------------------------------
- 
-    CSS INDEX
-    ===================
-	
-    1. BODY
-	2. CUSTOM CSS / A
-	3. PRELOADER
-	4. NAVIGATION
-	5. SLIDER
-
----------------------------------------*/
 
 
-/*--------------
-1.Theme default CSS
---------------------------*/
 
 $title-font: 'Poppins',
 sans-serif;
@@ -35,27 +15,27 @@ $line-height:25px;
 $transition: all 0.5s;
 
 /* ....................................
-1.1 Common CSS 
+1.1 Common CSS
 .......................................*/
 
 @import 'common/common';
 
 /* ....................................
-1.1 Header CSS 
+1.1 Header CSS
 .......................................*/
 
 @import 'header/header';
 
 
 /* ....................................
-1.1 Inner CSS 
+1.1 Inner CSS
 .......................................*/
 
 @import 'inner/inner';
 
 
 /* ....................................
-1.1 Footer CSS 
+1.1 Footer CSS
 .......................................*/
 
 @import 'footer/footer';
@@ -63,14 +43,14 @@ $transition: all 0.5s;
 
 
 /* ....................................
-1.2 SHORTCODE 03 CSS 
+1.2 SHORTCODE 03 CSS
 .......................................*/
 
 @import 'shortcode/shortcode';
 
 
 /* ....................................
-1.1 INDEX 03 CSS 
+1.1 INDEX 03 CSS
 .......................................*/
 
 @import 'home3/home3';
@@ -194,17 +174,17 @@ $transition: all 0.5s;
 	  width: 5px;
 }
 
-/* Track */
+
 .custom-check::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-.custom-check::-webkit-scrollbar-thumb {
-  background: #0060aa; 
+  background: #f1f1f1;
 }
 
-/* Handle on hover */
+
+.custom-check::-webkit-scrollbar-thumb {
+  background: #0060aa;
+}
+
+
 .custom-check::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }

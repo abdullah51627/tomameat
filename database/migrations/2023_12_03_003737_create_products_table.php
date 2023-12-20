@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("categories")->references("id")->on("categories");
+            $table->foreignId("category")->references("id")->on("categories");
             $table->integer('priority');
             $table->string('name');
             $table->string('description');
@@ -36,6 +36,9 @@ return new class extends Migration
      */
     public function down(): void
     {
+        Schema::table("products",function(Blueprint $table){
+            $table->dropForeign("product_images_product_id_foreign");
+        });
         Schema::dropIfExists('products');
     }
 };

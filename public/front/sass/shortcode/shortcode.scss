@@ -22,8 +22,8 @@ ul{
         }
     }
 }
-/*===================================== ACCORDION PAGE START ================================*/
-/*============================ first accordion ==============================*/
+
+
 .accor-heading{
     margin-bottom: 30px;
     h3{
@@ -32,7 +32,7 @@ ul{
     }
 }
 .accordion1-main-wrapper{
-  
+
     .accordion-button{
         span{
             display: inline-block;
@@ -62,7 +62,7 @@ ul{
 }
 
 
-/*============================ second accordion ==============================*/
+
 
 .accordion2-wrapper{
     background-color: #232323;
@@ -116,22 +116,22 @@ ul{
                     height: 15px;
                     line-height: 24px;
                     display: block;
-               
+
                 }
                 &:not(.collapsed){
-                 
+
                   &:after{
                     display: none;
                 }
                 }
             }
-        
+
         }
-       
+
     }
 }
 
-/*============================ Third accordion ==============================*/
+
 .accordion3-wrapper{
   background-color: #f7f7f7;
     .accordion-button{
@@ -165,23 +165,23 @@ ul{
                     color: #111111;
                     font-size: 14px;
                     display: block;
-                    
+
                 }
                 &:not(.collapsed){
-                 
+
                   &:after{
                   transform: rotate(90deg);
                 }
                 }
             }
-        
+
         }
-       
+
     }
 }
 
 
-/*============================ Fourth accordion ==============================*/
+
 .accordion4-wrapper{
     .accordion-button{
 
@@ -229,7 +229,7 @@ ul{
                 }
                 &:not(.collapsed){
                     &:after{
-                       background: #ef5350; 
+                       background: #ef5350;
                     }
                   &:before{
                     content: '-';
@@ -237,17 +237,17 @@ ul{
                     color: #ffffff;
                     font-size: 24px;
                 }
-             
+
                 }
             }
-        
+
         }
-       
+
     }
 }
 
 
-/*============================ Five accordion ==============================*/
+
 .accordion5-wrapper{
     background-color: #ef5350;
     .accor-heading{
@@ -296,7 +296,7 @@ ul{
                     z-index: 9;
                     color: #ffffff;
                 }
-              
+
                 &:not(.collapsed){
                     border-bottom: none;
                     background-color: #ef5350;
@@ -305,25 +305,25 @@ ul{
                     right: 25px;
                     font-size: 24px;
                 }
-             
+
                 }
             }
-        
+
         }
         .accordion-body{
             background-color: #ef5350;
             p{
                 color: #ffffff;
             }
-            
+
             }
     }
 }
 
 
-/*=================================== ACCORDION PAGE END ===============================*/
 
-/*======================BUTTON PAGE START ==============================*/
+
+
 
 .section-heading{
     margin-bottom: 50px;
@@ -335,7 +335,7 @@ ul{
 
 .button1-wrapper{
     text-align: center;
-  
+
     .btn1{
         display: inline-block;
         width: auto;
@@ -366,13 +366,13 @@ ul{
          }
          &.sm-btn{
              padding: 8px 22px;
-         } 
+         }
          &.xs-btn{
              padding: 6px 16px;
          }
      }
 }
-/* second button section */
+
 .button2-wrapper{
     text-align: center;
     background-color: #f7f7f7;
@@ -407,7 +407,7 @@ ul{
     }
 }
 
-/* third button section */
+
 .button3-wrapper{
     text-align: center;
     // background-image: linear-gradient( to top right,#f5bb8d,#feb399,#ffaea8,#fdaab9,#f3aaca);
@@ -465,7 +465,7 @@ ul{
     }
 }
 
-/* fourth button section */
+
 
 .button4-wrapper{
     text-align: center;
@@ -509,7 +509,7 @@ ul{
 }
 
 
-/*fifth button section*/
+
 .button5-wrapper{
     text-align: center;
     background-color: #232323;
@@ -582,7 +582,7 @@ ul{
 }
 
 
-/*six button section*/
+
 .button6-wrapper{
     text-align: center;
 
@@ -631,11 +631,11 @@ ul{
                     color: #232323;
                 }
             }
-           
+
         }
         &.instagram{
-            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
             background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
             background-size: 140% auto;
             border: none;
@@ -658,11 +658,11 @@ ul{
                 }
             }
         }
-    
+
     }
 }
 
-/*seven button section*/
+
 .button7-wrapper{
     text-align: center;
     background-color: #f7f7f7;
@@ -742,7 +742,7 @@ ul{
             &:hover{
                 &:after{
                     width: 100%;
-                    
+
                 }
             }
         }
@@ -826,9 +826,9 @@ ul{
 
     }
 }
-   
 
-/* Nine button section */
+
+
 
 .button9-wrapper{
     text-align: center;
@@ -839,7 +839,7 @@ ul{
         margin: 0 6px;
         font-weight: 600;
         font-size: 14px;
-        padding: 15px 28px 15px; 
+        padding: 15px 28px 15px;
         text-decoration: none;
         position: relative;
         z-index: 1;
@@ -884,7 +884,7 @@ ul{
     }
 }
 
-/*Ten button section*/
+
 .button10-wrapper{
     text-align: center;
     background-color: #232323;
@@ -934,7 +934,7 @@ ul{
     }
 }
 
-/*Eleven button section */
+
 .button11-wrapper{
     text-align: center;
     background-color: #f7f7f7;
@@ -958,18 +958,18 @@ ul{
         &.shadow-rounded{
             background-color: #ffffff;
             border-radius: 50px;
-        
+
         }
         &.shadow-squre{
             background-color: #232323;
             color: #ffffff;
         }
     }
-  
-    
+
+
 }
 
-/*Eleven button section*/
+
 .button12-wrapper{
     text-align: center;
     .flat-shadow-btn{
@@ -993,13 +993,13 @@ ul{
            color: #ffffff;
            box-shadow: none;
         }
-      
+
     }
-  
-    
+
+
 }
 
-/*RESPONSIVE CSS*/
+
 
   @mixin for-big-desktop-up {
     @media (max-width: 1199px) { @content; }
@@ -1022,8 +1022,8 @@ ul{
   @mixin for-extra-small-mobile-up {
     @media (max-width: 320px) { @content; }
   }
-  /*--width 1199 --*/
-  @include for-big-desktop-up {    
+
+  @include for-big-desktop-up {
        .btn-sizes{
            a{
                font-size: 14px;
@@ -1031,15 +1031,15 @@ ul{
        }
   }
 
-  /*--width 991 --*/
-@include for-desktop-up {    
+
+@include for-desktop-up {
     .btn-sizes{
         a{
             display: block !important;
             width: max-content !important;
             margin: 15px auto !important;
             text-align: center !important;
-            
+
         }
         .extra-btns{
             display: block !important;
@@ -1048,9 +1048,9 @@ ul{
     }
 }
 
-/*======================BUTTON PAGE END =======================*/
 
-/*=====================================CLIENT PAGE START ===============================*/
+
+
 .client1-wrapper{
     background-color: #f7f7f7;
     text-align: center;
@@ -1160,17 +1160,17 @@ ul{
         }
     }
 }
-/*=================================== CLIENT PAGE END ===============================*/
 
-/*======================== Google Map section ===================*/
+
+
 .g-map1-section{
     .h-500px{
         height: 500px;
     }
 }
 
-/*=========================== TAB PAGE START ====================*/
-/*------ tab-one ------*/
+
+
 
 .tab-one-wrapper {
     .tab-one{
@@ -1218,8 +1218,8 @@ ul{
             .tab-one-content{
                 h4{
                     color: #ef5350;
-                    text-transform: uppercase;  
-                    font-size: 20px;                 
+                    text-transform: uppercase;
+                    font-size: 20px;
                 }
                 h1{
                     font-weight: bold;
@@ -1258,7 +1258,7 @@ ul{
     }
 }
 
-/*-------- tab-two ------*/
+
 
 .tab-two-wrapper{
     background-color: #f7f7f7;
@@ -1336,9 +1336,9 @@ ul{
         }
     }
 }
-/*------ tab-two-end -----*/
 
-/*------- tab-three-start ------*/
+
+
 .tab-three-wrapper {
     .nav-pills{
         .nav-item{
@@ -1383,13 +1383,13 @@ ul{
     }
 }
 
-/*-------- tab-four-start --------*/
+
 
 .tab-four-wrapper {
 
 }
 
-/*------- tab-five-start ---------*/
+
 
 .tab-five-wrapper{
 
@@ -1442,7 +1442,7 @@ ul{
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
-            .strategic-content{     
+            .strategic-content{
                 margin-left: 25px;
                 p{
                     max-width: 350px;
@@ -1475,9 +1475,9 @@ ul{
     }
 }
 
-/*==================== FORM PAGE START ====================*/
 
-/*--------- form-one-start ---------*/
+
+
 
 .form-control {
     padding: 12px 10px;;
@@ -1537,7 +1537,7 @@ ul{
     }
 }
 
-/*--------- form-two-start ---------*/
+
 .form-two-wrapper {
     background-image: url('../images/form/bg-two.jpg');
     background-size: cover;
@@ -1554,7 +1554,7 @@ ul{
     }
 }
 
-/*------- form-three-start --------*/
+
 .form-three-wrapper{
     .form-three{
         form{
@@ -1569,7 +1569,7 @@ ul{
 
 }
 
-/*----- form-four-start ------*/
+
 .form-four-wrapper {
     background-color: #1f232c;
     .section-heading{
@@ -1622,11 +1622,11 @@ ul{
         border: 1px solid #86b7fe;
     }
 }
-/*========================== FORM PAGE END ====================*/
 
-/*===================== COUNTER PAGE START ==================*/
 
-/*------- counter-one-start -------*/
+
+
+
 
 .counter-one-wrapper{
     .counter-one{
@@ -1663,7 +1663,7 @@ ul{
     }
 }
 
-/*------ counter-two-start -------*/
+
 
 .counter-two-wrapper {
     background-color: #f9f9f9;
@@ -1714,7 +1714,7 @@ ul{
     }
 }
 
-/*------ counter-three-start -------*/
+
 
 .counter-three-wrapper {
     background-color: #1f232c;
@@ -1753,7 +1753,7 @@ ul{
     }
 }
 
-/*------ counter-four-start -------*/
+
 
 .counter-four-wrapper{
     .counter-four{
@@ -1808,16 +1808,16 @@ ul{
     }
 }
 
-/*===================== COUNTER PAGE END ==================*/
 
-/*================= COUNT-DOWN PAGE START ================*/
-/*-------- countdown-first-start --------*/
+
+
+
 
 .count-one-wrapper {
     #countdown-one{
         text-align: center;
         background: #222;
-        background-image: -webkit-linear-gradient(top, #222, #333, #333, #222); 
+        background-image: -webkit-linear-gradient(top, #222, #333, #333, #222);
         background-image:    -moz-linear-gradient(top, #222, #333, #333, #222);
         background-image:     -ms-linear-gradient(top, #222, #333, #333, #222);
         background-image:      -o-linear-gradient(top, #222, #333, #333, #222);
@@ -1832,7 +1832,7 @@ ul{
             width: 8px;
             height: 65px;
             background: #444;
-            background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
+            background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
             background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
             background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
             background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
@@ -1848,7 +1848,7 @@ ul{
             width: 8px;
             height: 65px;
             background: #444;
-            background-image: -webkit-linear-gradient(top, #555, #444, #444, #555); 
+            background-image: -webkit-linear-gradient(top, #555, #444, #444, #555);
             background-image:    -moz-linear-gradient(top, #555, #444, #444, #555);
             background-image:     -ms-linear-gradient(top, #555, #444, #444, #555);
             background-image:      -o-linear-gradient(top, #555, #444, #444, #555);
@@ -1868,7 +1868,7 @@ ul{
                 text-align: center;
                 color: #111111;
                 background-color: #ddd;
-                background-image: -webkit-linear-gradient(top, #bbb, #eee); 
+                background-image: -webkit-linear-gradient(top, #bbb, #eee);
                 background-image:    -moz-linear-gradient(top, #bbb, #eee);
                 background-image:     -ms-linear-gradient(top, #bbb, #eee);
                 background-image:      -o-linear-gradient(top, #bbb, #eee);
@@ -1918,7 +1918,7 @@ ul{
     }
 }
 
-/*---- count-down-two-start -----*/
+
 
 .count-two-wrapper{
     text-align: center;
@@ -1957,8 +1957,8 @@ ul{
   color: #abcd58;
 }
 
-/*================= PRICING PAGE START ================*/
-/*-------- pricing-first-start --------*/
+
+
 .price-btn{
     border: 2px solid #262b35;
     padding: 8px 22px;
@@ -2041,7 +2041,7 @@ ul{
     }
 }
 
-/*-------- pricing-two-start --------*/
+
 .box-two{
     padding-right: 0px;
 }
@@ -2058,7 +2058,7 @@ ul{
                 background-color: #f7f7f7;
                 padding: 12px;
                 h6{
-                    text-transform: uppercase;                  
+                    text-transform: uppercase;
                     font-size: 13px;
                     margin-bottom: 0px;
                 }
@@ -2103,7 +2103,7 @@ ul{
     }
 }
 
-/*-------- pricing-three-start --------*/
+
 
 .pricing-three-wrapper {
     .pricing-three{
@@ -2203,8 +2203,8 @@ ul{
     }
 }
 
-/*-/================= TESTIMONIAL PAGE START ================*/
-/*-------- testimonial-first-start --------*/
+
+
 
 .testimonial-one-wrapper{
     background-color: #f7f7f7;
@@ -2260,7 +2260,7 @@ ul{
                     -webkit-text-fill-color: transparent;
                     font-size: 25px;
                 }
-              
+
             }
             span{
                 color: #808080c2;
@@ -2270,7 +2270,7 @@ ul{
     }
 }
 
-/*------------ testimonial-two -----------*/
+
 .testimonial-two-wrapper{
     background-color: #232323;
     .section-heading{
@@ -2377,7 +2377,7 @@ ul{
     }
 }
 
-/*--------- testimonial-three-start ---------*/
+
 .testimonial-three-wrapper{
     background-color: #dbdbdb;
     .slider-two-wrapper{
@@ -2428,7 +2428,7 @@ ul{
             img{
                 width: 50px;
             }
-            .author-name{             
+            .author-name{
                 margin-left: 15px;
                 h6{
                     margin-bottom: 0px;
@@ -2444,7 +2444,7 @@ ul{
     }
 }
 
-/*------- testimonial-four-start -------*/
+
 .testimonial-four-wrapper {
     .test-bg{
         background-image: url('../images/testimonial/image_bg.jpg');
@@ -2538,7 +2538,7 @@ ul{
     }
 }
 
-/*------- testimonial-five-start -------*/
+
 .testimonial-five-wrapper {
     .testimonial-five {
         .owl-carousel{
@@ -2562,7 +2562,7 @@ ul{
                         display: block;
                         padding: 10px 0;
                     }
-                  
+
                     h6{
                         margin: 10px 0;
                         font-size: 20px;
@@ -2597,8 +2597,8 @@ ul{
 }
 
 
-  /*--width 991 --*/
-@include for-desktop-up {  
+
+@include for-desktop-up {
     .tab-two-wrapper .tab-content .tab-two-head .tab-two-head-wrapper {
         padding: 20px 0;
     }
@@ -2653,11 +2653,11 @@ ul{
         img{
             width: 100%;
         }
-    } 
+    }
 }
 
 
-/*--------- ALERT PAGE START ---------*/
+
 
 .al-section-1 .alert-section-1 {
     margin-top: 40px;
@@ -2688,7 +2688,7 @@ ul{
         font-size: 18px;
     }
 }
-/*--------section-top-padding------*/
+
 .al-section-2{
     background-color: #f9f9f9;
     span{
@@ -2703,7 +2703,7 @@ ul{
             display: inline-block;
             width: 70px;
             height: 70px;
-           
+
         }
     }
     .alert-content{
@@ -2748,7 +2748,7 @@ ul{
         border-radius: 40px;
     }
 }
-/*--------section-top-padding------*/
+
 
 .al-section-3 {
     span i{
@@ -2775,12 +2775,12 @@ ul{
     .envelope-color{
         background-color: #797979;
         color: #fff;
-       
+
     }
     .triangle-color{
         background-color: #eb768c;
         color: #fff;
-      
+
     }
     .umbrella-color{
         background-color: #31aae2;
@@ -2788,7 +2788,7 @@ ul{
     }
     .bell-color{
         background-color: #f0c440;
-        color: #fff; 
+        color: #fff;
     }
     .check-color{
         background-color:#73c8b7;
@@ -2823,7 +2823,7 @@ ul{
     }
 }
 
-/*----alert section-4----*/
+
 .al-section-4{
     background-color: #f9f9f9;
     .alert-box{
@@ -2870,7 +2870,7 @@ ul{
     }
 }
 
-/*----alert section-5----*/
+
 .al-section-5 {
     .alert-img{
         float: left;
@@ -2904,7 +2904,7 @@ ul{
     }
     .bell-color{
         background-color: #f0c440;
-        color: #fff; 
+        color: #fff;
     }
     .check-color{
         background-color:#73c8b7;
@@ -2922,7 +2922,7 @@ ul{
     .alert-dismissible .btn-close{
         background: none !important;
     }
- 
+
     i{
         font-size: 30px;
     }
@@ -2937,7 +2937,7 @@ ul{
             top: 40px;
         }
     }
-  
+
 
 }
 @include  for-teblet-up{
@@ -2975,9 +2975,9 @@ ul{
             display: block;
         }
     }
-   
+
 }
-@include for-small-mobile-up {    
+@include for-small-mobile-up {
     .al-section-2{
         .alert-img{
             float: none;
@@ -3000,11 +3000,11 @@ ul{
             text-align: center;
         }
     }
-   
-  
+
+
 }
 
-/*--------- text-box-start ----------*/
+
 
 .team-one-wrapper {
     padding-bottom: 150px;
@@ -3074,7 +3074,7 @@ ul{
                                             -moz-transition: all .5s;
                                             -ms-transition: all .5s;
                                             -o-transition: all .5s;
-                                            transition: all .5s;   
+                                            transition: all .5s;
                                             &:hover{
                                                 border: 1px solid #ef5350;
                                                 background: #ef5350;
@@ -3310,9 +3310,9 @@ ul{
                 color: #ffffff;
                 span{
                     text-transform: uppercase;
-                    font-weight: 500;  
+                    font-weight: 500;
                 }
-              
+
                 .social-icon-three{
                     position: absolute;
                     bottom: 40px;
@@ -3334,7 +3334,7 @@ ul{
                 top: 0;
                 visibility: visible;
                }
-           } 
+           }
         }
     }
 }
@@ -3444,7 +3444,7 @@ ul{
     }
 
 
-/*--------- social icons css start ---------*/
+
 .icon1-main-wrapper{
     .social-icons{
         ul{
@@ -3485,7 +3485,7 @@ ul{
                     -o-transition: all 0.5s;
                     -ms-transition: all 0.5s;
                     -moz-transition: all 0.5s;
-                  
+
                    &.facebook{
                        &:hover{
                         color: #3b5998;
@@ -3497,42 +3497,42 @@ ul{
                         color: #00aced;
                         transform: translateY(-10px);
                        }
-                    
+
                 }
                 &.google{
                     &:hover{
                         color: #dc4a38;
                         transform: translateY(-10px);
                        }
-                    
+
                 }
                 &.dribbble{
                     &:hover{
                         color: #ea4c89;
                         transform: translateY(-10px);
                        }
-                   
+
                 }
                 &.linkedin{
                     &:hover{
                         color: #0077b5;
                         transform: translateY(-10px);
                        }
-                  
+
                 }
                 &.instagram{
                     &:hover{
                         color: #fe1f49;
                         transform: translateY(-10px);
                        }
-                   
+
                 }
                 &.behance{
                     &:hover{
                         color: #1769ff;
                         transform: translateY(-10px);
                        }
-                    
+
                 }
                 }
             }
@@ -3541,7 +3541,7 @@ ul{
 }
 
 .icon3-main-wrapper{
-    
+
     .social-icons{
         ul{
             display: flex;
@@ -3565,12 +3565,12 @@ ul{
                     &:hover{
                         border-radius: 50px;
                     }
-                  
+
                    &.facebook{
                        background-color: #3b5998;
                    }
                    &.twitter{
-                    background-color: #00aced; 
+                    background-color: #00aced;
                 }
                 &.google{
                     background-color: #dc4a38;
@@ -3622,7 +3622,7 @@ ul{
                        box-shadow: 0 0 30px #17171740;
                        transform: translate3d(0,-5px,0);
                     }
-                  
+
                    &.facebook{
                        background-color: #3b5998;
                        &:hover{
@@ -3630,7 +3630,7 @@ ul{
                        }
                    }
                    &.twitter{
-                    background-color: #00aced; 
+                    background-color: #00aced;
                     &:hover{
                         color:#00aced ;
                     }
@@ -3672,7 +3672,7 @@ ul{
 }
 
 .icon5-main-wrapper{
-  
+
     .social-icons{
         ul{
             display: flex;
@@ -3721,7 +3721,7 @@ ul{
                         left: 0;
                        }
                     }
-                  
+
                    &.facebook{
                        span{
                         background-color: #3b5998;
@@ -3729,9 +3729,9 @@ ul{
                    }
                    &.twitter{
                     span{
-                        background-color: #00aced; 
+                        background-color: #00aced;
                     }
-                    
+
                 }
                 &.google{
                     span{
@@ -3747,20 +3747,20 @@ ul{
                    span{
                     background-color: #0077b5;
                    }
-                   
+
                 }
                 &.instagram{
                     span{
                         background-color: #fe1f49;
                     }
-                 
-                  
+
+
                 }
                 &.behance{
                     span{
                         background-color: #1769ff;
                     }
-                   
+
                 }
                 }
             }
@@ -3770,7 +3770,7 @@ ul{
 
 .icon6-main-wrapper{
     background-color: #e9e9e9;
-   
+
     .social-icons{
         ul{
             display: flex;
@@ -3816,7 +3816,7 @@ ul{
                             -o-transition-duration: .3s;
                             transition-duration: .3s;
                         }
-                       
+
                     }
                     &.facebook{
                         color: #3b5998;
@@ -3916,7 +3916,7 @@ ul{
     }
 }
 
-/* responsive of shortcode */
+
 @include for-teblet-up{
     .icon1-main-wrapper, .icon2-main-wrapper, .icon3-main-wrapper, .icon4-main-wrapper, .icon5-main-wrapper, .icon7-main-wrapper {
         .social-icons ul li{
@@ -3961,7 +3961,7 @@ ul{
 }
 
 
-/*-------- gallery section -----------*/
+
 .gallery1-wrapper{
     .img-gallery-wrapper{
         ul{
@@ -4041,7 +4041,7 @@ ul{
     }
 }
 
-/*------------------- gallery section -----------*/
+
 .gallery1-wrapper{
     .img-gallery-wrapper{
         ul{
@@ -4115,19 +4115,19 @@ ul{
                             }
                         }
 
-                       
-                        
+
+
                     }
                 }
             }
-           
+
         }
     }
-  
+
 }
 
-/* gallery second start  */
-/* section_1 css */
+
+
 
 .gallery2-wrapper{
 	background-color: #e9e9e9;
@@ -4192,7 +4192,7 @@ ul{
     }
 }
 
-/* section_1 css end*/
+
 .gallery3-wrapper{
     .img-gallery-wrapper{
         ul{
@@ -4266,15 +4266,15 @@ ul{
                             }
                         }
 
-                       
-                        
+
+
                     }
                 }
             }
-           
+
         }
     }
-  
+
 }
 
 // gallery four section start
@@ -4381,8 +4381,8 @@ ul{
     }
 }
 
-/* section_4 css end*/
-/* section_6 css start*/
+
+
 .gallery4-wrapper{
     background-color: #e9e9e9;
     .tab_image, .tab_image_text{
@@ -4415,13 +4415,13 @@ ul{
             }
         }
     }
-    
+
 .section6_nav_tabs .nav-pills>li>a{
 	border:1px solid #fff;
 	color:#999999;
 	text-transform:uppercase;
 }
-.section6_nav_tabs .nav>li>a:focus, 
+.section6_nav_tabs .nav>li>a:focus,
 .section6_nav_tabs .nav>li>a:hover {
     text-decoration: none;
 	color: #ef5350;
@@ -4429,8 +4429,8 @@ ul{
 	border-radius:35px;
 	background:#fff;
 }
-.section6_nav_tabs .nav-pills>li a.active, 
-.section6_nav_tabs .nav-pills>li a.active>:focus, 
+.section6_nav_tabs .nav-pills>li a.active,
+.section6_nav_tabs .nav-pills>li a.active>:focus,
 .section6_nav_tabs .nav-pills>li a.active>:hover {
     color: #ef5350;
 	border:1px solid #ef5350;
@@ -4444,7 +4444,7 @@ ul{
 }
 .project_category{
 	float:left;
-}	
+}
 .project_likes{
 	float:right;
 }
@@ -4526,10 +4526,10 @@ ul{
 
 
 
-/* section_6 css end*/
 
 
-/* media query css for mobile */
+
+
 
 @include for-desktop-up{
     .gallery1-wrapper .img-gallery-wrapper ul{
@@ -4592,7 +4592,7 @@ ul{
 }
 }
 
-/*===========================pricing table css start=============================*/
+
 
 .p-top-padding{
     padding-top:40px;
@@ -4600,7 +4600,7 @@ ul{
 .p-bottom-padding{
     padding-bottom:40px;
 }
-/*---pricing page first section ----*/
+
 .pt-section-1{
     .p-box-1{
         height: 660px;
@@ -4633,7 +4633,7 @@ ul{
         }
         .btn-1{
             width: 230px;
-            height: 40px; 
+            height: 40px;
             border-radius: 30px;
             color: #ef5350;
             border: 1px solid #ef5350;
@@ -4643,7 +4643,7 @@ ul{
             -ms-transition: all 0.7s;
             -moz-transition: all 0.7s;
             transition: all 0.7s;
-        
+
         }
         &:hover{
             .btn-1{
@@ -4690,7 +4690,7 @@ ul{
     }
 }
 
-/*----------Animation Css over--------*/
+
 
 .pt-section-2{
     background-color: #e9e9e9;
@@ -4741,7 +4741,7 @@ ul{
         }
         .btn-2{
             width: 210px;
-            height: 40px; 
+            height: 40px;
             border-radius: 30px;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -4755,8 +4755,8 @@ ul{
             -ms-transition: all 0.7s;
             -moz-transition: all 0.7s;
             transition: all 0.7s;
-        
-            
+
+
         }
         &:before {
             content: '';
@@ -4795,7 +4795,7 @@ ul{
 }
 
 
-/*------------------- 3rd style -------------------*/
+
 .pt-section-3{
     text-align: center;
     .p-box-3{
@@ -4858,7 +4858,7 @@ ul{
             span{
                 color: #64AAA4;
             }
-            
+
         }
         .btn-5 {
             border: none;
@@ -4876,7 +4876,7 @@ ul{
             }
         }
     }
-    
+
 }
 
 .pt-section-4{
@@ -4913,8 +4913,8 @@ ul{
                     font-size: 14px;
                 }
             }
-         
-        
+
+
         }
 
         .list-6{
@@ -4954,7 +4954,7 @@ ul{
     }
 }
 
-/*------------------- fifth table css -----*/
+
 .pt-section-5{
     .p-box-5{
         margin-top: 20px;
@@ -5028,7 +5028,7 @@ ul{
 }
 
 
-/*------------ icon page css start ----------*/
+
 .ic-section-1{
     .icon-1{
         height: 80px;
@@ -5041,7 +5041,7 @@ ul{
         transition: all 0.7s;
         color: #fff;
         background-color: #ef5350;
-    
+
     }
     .box {
         border: 1px solid #e9e9e9;
@@ -5069,7 +5069,7 @@ ul{
             }
         }
     }
- 
+
     .box-border {
         transition: color 0.25s;
         position: relative;
@@ -5253,7 +5253,7 @@ ul{
 
 .ic-section-4 {
     background-color: #f9f9f9;
-    .icon-box-four{      
+    .icon-box-four{
         text-align: center;
         border: 1px solid #e9e9e9;
         -webkit-transition: all 0.7s;
@@ -5462,12 +5462,12 @@ ul{
 
 
 
-/*------------- typography page  start -----------*/
 
 
-/*------------------ list-page-start -----------*/
 
-/*------------------- list-one ------------------*/
+
+
+
 .list-main-wrapper-one{
     background-color: #fafafa;
     .list-one-wrapper{
@@ -5525,7 +5525,7 @@ ul{
     }
 }
 
-/*--list-two--*/
+
 .list-main-wrapper-two{
     .list-two-wrapper{
         margin-top: 25px;
@@ -5545,7 +5545,7 @@ ul{
     }
 }
 
-/*--  list-three */
+
 .list-main-wrapper-three {
     background-color: #fafafa;
     .list-three-wrapper {
@@ -5569,7 +5569,7 @@ ul{
         }
     }
 }
-/*--  list-four --*/
+
 .list-main-wrapper-four {
     background-color: #f7f7f7;
     .list-four-wrapper {
@@ -5595,7 +5595,7 @@ ul{
     }
 }
 
-//----- list-five 
+//----- list-five
 .list-main-wrapper-five {
     .list-five-wrapper {
         ul{

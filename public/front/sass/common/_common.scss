@@ -33,7 +33,7 @@ html {
 	font-family: $body-font;
 	font-size: $font-size;
 	color: $body-color;
-	
+
 	-webkit-transition: $transition;
 	-o-transition: $transition;
 	-ms-transition: $transition;
@@ -263,7 +263,7 @@ a.button-btn , button.button-btn{
 
 // side bar
 .mobile-menu-wrapper {
-	
+
 	.toggle-main-wrapper {
 		display: flex;
 		justify-content: flex-end;
@@ -297,7 +297,7 @@ a.button-btn , button.button-btn{
 	}
 	#cssmenu {
 		width: 280px;
-		
+
 		ul {
 			li {
 				border-bottom: 1px solid #ffffff61;
@@ -309,7 +309,7 @@ a.button-btn , button.button-btn{
 					color: #fff;
 					text-transform: capitalize;
 				}
-				
+
 			}
 			.has-sub {
 				ul {
@@ -588,24 +588,24 @@ a.button-btn , button.button-btn{
 
 // scroll
 
-/* width */
+
 .product-filter-main-wrapper .tab::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
+
 .product-filter-main-wrapper .tab::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-.product-filter-main-wrapper .tab::-webkit-scrollbar-thumb {
-  background: #ccc; 
+  background: #f1f1f1;
 }
 
-/* Handle on hover */
+
+.product-filter-main-wrapper .tab::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+
 .product-filter-main-wrapper .tab::-webkit-scrollbar-thumb:hover {
-  background: #ef5350; 
+  background: #ef5350;
 }
 
 .mar-left{
@@ -666,7 +666,7 @@ a.button-btn , button.button-btn{
 	float: left;
 }
 
-/*-- Preloader css start --*/
+
 #preloader {
 	background-color: $title-color-white;
 	bottom: 0;
@@ -691,4 +691,4 @@ a.button-btn , button.button-btn{
     -moz-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
 }
-/*-- Preloader css End --*/
+

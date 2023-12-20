@@ -1,18 +1,18 @@
-/******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+ (() => { // webpackBootstrap
+ 	var __webpack_modules__ = ({
 
-/***/ "./resources/js/pages/lightbox.init.js":
+ "./resources/js/pages/lightbox.init.js":
 /*!*********************************************!*\
   !*** ./resources/js/pages/lightbox.init.js ***!
   \*********************************************/
-/***/ (function() {
+ (function() {
 
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Lightbox  Js File
+
+
+
+
+
 */
 (function ($) {
   'use strict';
@@ -147,16 +147,16 @@ File: Lightbox  Js File
   });
 }).apply(this, [jQuery]);
 
-/***/ })
+ })
 
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./resources/js/pages/lightbox.init.js"]();
-/******/ 	
-/******/ })()
+ 	});
+
+
+ 	// startup
+ 	// Load entry module and return exports
+ 	// This entry module is referenced by other modules so it can't be inlined
+ 	var __webpack_exports__ = {};
+ 	__webpack_modules__["./resources/js/pages/lightbox.init.js"]();
+
+ })()
 ;

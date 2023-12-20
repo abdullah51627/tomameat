@@ -1,16 +1,16 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!*****************************************************!*\
   !*** ./resources/js/pages/bootstrap-toasts.init.js ***!
   \*****************************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Bootstrap Toasts Js
+
+
+
+
+
 */
-//  Bootstrap Toast 
+//  Bootstrap Toast
 var toastTrigger = document.getElementById('liveToastBtn');
 var toastLiveExample = document.getElementById('liveToast');
 
@@ -19,7 +19,7 @@ if (toastTrigger) {
     var toast = new bootstrap.Toast(toastLiveExample);
     toast.show();
   });
-} // Bordered Toast 
+} // Bordered Toast
 
 
 var toastTrigger2 = document.getElementById("borderedToast1Btn");
@@ -72,5 +72,5 @@ toastPlacement && document.getElementById("selectToastPlacement").addEventListen
   });
   b.show();
 });
-/******/ })()
+ })()
 ;

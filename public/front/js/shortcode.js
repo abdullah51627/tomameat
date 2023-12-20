@@ -206,20 +206,20 @@ $('.clientFiveSlider .owl-carousel').owlCarousel({
 
 
 //-------------Progress bar section-13-a------------//
- 
+
 $( document ).ready(function() {
-          
+
 
   //------ progress bar js -----//
 var wind = $(window);
         $(".loading").fadeOut(500);
-    
-    
+
+
         wind.on('scroll', function () {
             $(" .skills-progress span").each(function () {
-                var bottom_of_object = 
+                var bottom_of_object =
                 $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = 
+                var bottom_of_window =
                 $(window).scrollTop() + $(window).height();
                 var myVal = $(this).attr('data-value');
                 if(bottom_of_window > bottom_of_object) {
@@ -229,11 +229,11 @@ var wind = $(window);
                 }
             });
         });
-  
+
         $(".ps-section-4 .skills-progress span").each(function () {
-          var bottom_of_object = 
+          var bottom_of_object =
           $(this).offset().top + $(this).outerHeight();
-          var bottom_of_window = 
+          var bottom_of_window =
           $(window).scrollTop() + $(window).height();
           var myVal = $(this).attr('data-value');
           if(bottom_of_window > bottom_of_object) {
@@ -334,11 +334,11 @@ responsive: {
         },
         480: {
             items: 1,
-           
+
         },
         600: {
             items: 3,
-            
+
         },
         1000: {
             items: 5
@@ -358,11 +358,11 @@ responsive: {
     },
     480: {
         items: 1,
-       
+
     },
     600: {
         items: 3,
-        
+
     },
     1000: {
         items: 5
@@ -383,11 +383,11 @@ responsive: {
     },
     480: {
         items: 1,
-       
+
     },
     600: {
         items: 2,
-        
+
     },
     1000: {
         items: 4
@@ -407,11 +407,11 @@ responsive: {
 },
 480: {
     items: 1,
-   
+
 },
 600: {
     items: 2,
-    
+
 },
 1000: {
     items: 4
@@ -431,7 +431,7 @@ responsive:{
 },
 480: {
     items: 1
-   
+
 },
 600:{
     items:3
@@ -454,7 +454,7 @@ responsive:{
 },
 480: {
     items: 1
-   
+
 },
 600:{
     items:3
@@ -467,8 +467,8 @@ responsive:{
 
 });
 
-// testimonial page js 
-/*section-1 slider js */
+// testimonial page js
+
 $(document).ready(function() {
     $('.section1_slider_wrapper .owl-carousel').owlCarousel({
       loop: true,
@@ -495,7 +495,7 @@ $(document).ready(function() {
     })
 })
 
-/*section-2 slider js */	
+
 $(document).ready(function() {
 $('.section2_slider_wrapper .owl-carousel').owlCarousel({
       loop: true,
@@ -522,7 +522,7 @@ $('.section2_slider_wrapper .owl-carousel').owlCarousel({
 })
 })
 
-/*section-3 slider js */
+
 $(document).ready(function() {
     $('.section3_slider_wrapper .owl-carousel').owlCarousel({
       loop: true,
@@ -549,7 +549,7 @@ $(document).ready(function() {
   })
 })
 
-/*section-4 slider js */
+
 $(document).ready(function() {
 $('.section4_testimonial_info .owl-carousel').owlCarousel({
       loop: true,
@@ -577,7 +577,7 @@ $('.section4_testimonial_info .owl-carousel').owlCarousel({
 })
 
 
-/*section-5 slider js */
+
 $(document).ready(function() {
     $('.section5_slider_wrapper .owl-carousel').owlCarousel({
       loop: true,
@@ -602,9 +602,9 @@ $(document).ready(function() {
         }
       }
     })
-  })		
+  })
 // team page js
-/* section1_team_slider js */
+
 $(document).ready(function() {
     $('.section1_team_slider .owl-carousel').owlCarousel({
       loop: true,
@@ -629,9 +629,9 @@ $(document).ready(function() {
         }
       }
     })
-  })		
-  
-/* section2_team_slider js */
+  })
+
+
 $(document).ready(function() {
     $('.section2_team_slider .owl-carousel').owlCarousel({
       loop: true,
@@ -656,9 +656,9 @@ $(document).ready(function() {
         }
       }
     })
-  })		
-  
-/* section4_team_slider js */
+  })
+
+
 $(document).ready(function() {
     $('.section4_team_slider .owl-carousel').owlCarousel({
       loop: true,
@@ -684,8 +684,8 @@ $(document).ready(function() {
       }
     })
   })
-  
-/* section5_team_slider js */
+
+
 $(document).ready(function() {
     $('.section5_team_slider .owl-carousel').owlCarousel({
       loop: true,
@@ -710,11 +710,11 @@ $(document).ready(function() {
         }
       }
     })
-  })	
+  })
 
 // light box js
-/* section-1 lightbox js */
-			
+
+
 $('.portfolio_img_text').magnificPopup({
     delegate: '.search',
     type: 'image',
@@ -734,7 +734,7 @@ $('.portfolio_img_text').magnificPopup({
 })
 
 
-/* section-2 lightbox js */
+
 
 $('#all').magnificPopup({
     delegate: '.search_link',
@@ -844,7 +844,7 @@ $('#mockup').magnificPopup({
     }
 });
 
-/* section-4 lightbox js */
+
 
 $('.portfolio_img_icon').magnificPopup({
     delegate: '.zoom_link',
@@ -863,9 +863,9 @@ $('.portfolio_img_icon').magnificPopup({
         }
     }
 });
- 
+
 //   portfolio page js start
-/* section4_portfolio_slider js */
+
 $(document).ready(function() {
     $('.section4_portfolio_slider .owl-carousel').owlCarousel({
       loop: true,
@@ -890,9 +890,9 @@ $(document).ready(function() {
         }
       }
     })
-  })	
-  
-/* section5_portfolio_slider js */
+  })
+
+
 $(document).ready(function() {
     $('.section5_portfolio_slider .owl-carousel').owlCarousel({
       loop: true,
@@ -917,7 +917,7 @@ $(document).ready(function() {
         }
       }
     })
-  })		
+  })
 
 
 

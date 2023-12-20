@@ -1,14 +1,14 @@
-/******/ (() => { // webpackBootstrap
+ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!*********************************************!*\
   !*** ./resources/js/pages/calendar.init.js ***!
   \*********************************************/
 /*
-Template Name: Minible - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Calendar init js
+
+
+
+
+
 */
 !function ($) {
   "use strict";
@@ -25,7 +25,7 @@ File: Calendar init js
     var selectedEvent = null;
     var newEventData = null;
     var eventObject = null;
-    /* initialize the calendar */
+
 
     var date = new Date();
     var d = date.getDate();
@@ -128,7 +128,7 @@ File: Calendar init js
       events: defaultEvents
     });
     calendar.render();
-    /*Add new event*/
+
     // Form to add new event
 
     $(formEvent).on('submit', function (ev) {
@@ -179,5 +179,5 @@ function ($) {
 
   $.CalendarPage.init();
 }(window.jQuery);
-/******/ })()
+ })()
 ;

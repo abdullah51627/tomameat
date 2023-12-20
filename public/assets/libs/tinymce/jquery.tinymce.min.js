@@ -70,7 +70,7 @@ var v=function(){function r(e){
 // If the function is remove
 "remove"===e&&this.each(function(e,t){var n=u(t);n&&n.remove()}),this.find("span.mceEditor,div.mceEditor").each(function(e,t){var n=f().get(t.id.replace(/_parent$/,""));n&&n.remove()})}function o(i){var e,t=this;
 // Handle set value
-/*jshint eqnull:true */if(null!=i)r.call(t),
+if(null!=i)r.call(t),
 // Saves the contents before get/set value of textarea/div
 t.each(function(e,t){var n;(n=f().get(t.id))&&n.setContent(i)});else if(0<t.length&&(e=f().get(t[0].id)))return e.getContent()}function l(e){return e&&e.length&&d.tinymce&&e.is(":tinymce")}
 // Removes any child editor instances by looking for editor wrapper elements
