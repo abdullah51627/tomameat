@@ -240,11 +240,11 @@
                             <img class="img-fluid" src="{{asset('front/images/team1.jpg')}}" alt="img">
                         </div>
                         <div class="team-text">
-                            <h4> <a href="team-single.html">Shams Tabrez</a> </h4>
-                            <p>OWNER</p>
+                            <h4> <a href="">Abdullah Riaz</a> </h4>
+                            <p>CEO</p>
                             <ul class="social-tag">
                                 <li>
-                                    <a href="javascript:;">
+                                    <a href="">
                               <span>
                                  <svg viewBox="0 0 25 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                       xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -323,7 +323,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:;">
+                                    <a href="https://www.linkedin.com/in/abdullah-riaz-6a7581207/" target="_blank">
                               <span>
                                  <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
                                       text-rendering="geometricPrecision" image-rendering="optimizeQuality"
@@ -344,8 +344,8 @@
                             <img class="img-fluid" src="{{asset('front/images/team2.jpg')}}" alt="img">
                         </div>
                         <div class="team-text">
-                            <h4> <a href="team-single.html">Jhon Doe</a> </h4>
-                            <p>SNR. TomaMeat</p>
+                            <h4> <a href="team-single.html">M.Hamza Ahmed</a> </h4>
+                            <p>Managing Director</p>
                             <ul class="social-tag">
                                 <li>
                                     <a href="javascript:;">
@@ -448,7 +448,7 @@
                             <img class="img-fluid" src="{{asset('front/images/team3.jpg')}}" alt="img">
                         </div>
                         <div class="team-text">
-                            <h4> <a href="team-single.html">Lisa Doe</a> </h4>
+                            <h4> <a href="team-single.html">Muhammad Taha Khan</a> </h4>
                             <p>SALES PERSONS</p>
                             <ul class="social-tag">
                                 <li>
