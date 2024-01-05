@@ -35,6 +35,7 @@ Route::group(['prefix' => '/admin'],function(){
 
 });
 
+Route::view('about-us', "front.about-us");
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
 Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
@@ -43,7 +44,6 @@ Route::post('cart-clear', [CartController::class, 'clearAllCart'])->name('cart.c
 Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
 Route::get("/shop",[\App\Http\Controllers\HomeController::class,'shop']);
 Route::any("/checkout",[\App\Http\Controllers\HomeController::class,'checkout'])->name('checkout');
-
 //// Registration Routes...
 //Route::get('register', [
 //    'as' => 'register',

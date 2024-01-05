@@ -97,81 +97,18 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about-us.html">About</a>
+                                        <a class="nav-link" href="/about-us">About</a>
                                     </li>
 
-                                    <li class="nav-item menu-click4 ps-rel">
-                                        <a class="nav-link" href="javascript:;">Shortcodes
-                                            <span><i class="fas fa-chevron-down"></i></span>
-                                        </a>
-                                        <ul class="dropdown-items menu-open4">
-                                            <li class="megamenu-wrapper">
-                                                <div class="megamenu-list">
-                                                    <h5>Shortcode (1)</h5>
-                                                    <a href="accordion.html">Accordian</a>
-                                                    <a href="client.html">Client</a>
-                                                    <a href="counter.html">Counter</a>
-                                                    <a href="form.html">Form</a>
-                                                    <a href="gallery.html">Gallery</a>
-                                                </div>
-                                                <div class="megamenu-list">
-                                                    <h5>Shortcode (2)</h5>
-                                                    <a href="alert.html">Alert</a>
-                                                    <a href="icon.html">Icon</a>
-                                                    <a href="list.html">List</a>
-                                                    <a href="pricing.html">Pricing</a>
-                                                    <a href="social-icon.html">Social Icon</a>
-                                                </div>
-                                                <div class="megamenu-list">
-                                                    <h5>Shortcode (3)</h5>
-                                                    <a href="button.html">Button</a>
-                                                    <a href="tab.html">Tabs</a>
-                                                    <a href="team.html">Team</a>
-                                                    <a href="testimonial.html">Testimonial</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item menu-click3 ps-rel">
-                                        <a class="nav-link" href="javascript:;">Shop <span><i
-                                                    class="fas fa-chevron-down"></i></span></a>
-                                        <ul class="dropdown-items menu-open3">
-                                            <li><a href="product.html">Product</a></li>
-                                            <li><a href="/shop">Product Left Sidebar</a></li>
-                                            <li><a href="product-right-sidebar.html">Product Right Sidebar</a></li>
-                                            <li><a href="product-single.html"> Product Single</a></li>
-                                            <li><a href="checkout.html"> Checkout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item menu-click ps-rel">
-                                        <a class="nav-link" href="javascript:;">Blog
-                                            <span><i class="fas fa-chevron-down"></i></span>
-                                        </a>
-                                        <ul class="dropdown-items menu-open">
-                                            <li>
-                                                <a href="javascript:;">Blog Category <span><i
-                                                            class="fas fa-chevron-right"></i></span></a>
-                                                <ul class="sub-dropdown">
-                                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:;">Blog Single <span><i
-                                                            class="fas fa-chevron-right"></i></span></a>
-                                                <ul class="sub-dropdown">
-                                                    <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                                                    <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a>
-                                                    </li>
-
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="store.html">Store</a>
+                                        <a class="nav-link" href="/shop">Shop</a>
                                     </li>
+
+
+
+
+
+
                                     <li class="nav-item menu-click1 ps-rel">
                                         <a class="nav-link" href="/cart">Cart <span class="cartCount">{{ Cart::getTotalQuantity()}}</span> <i class="fa fa-shopping-cart"
                                                                                                                                                    aria-hidden="true"></i></a>
@@ -282,7 +219,7 @@
                             <li><a href="index2.html">Home 02</a></li>
                         </ul>
                     </li>
-                    <li><a href="about-us.html">about</a></li>
+                    <li><a href="/about-us">about</a></li>
 
                     <li class="has-sub">
                         <a href="">Shop</a>
@@ -340,23 +277,13 @@
                     <div class="link-page">
                         <ul>
                             <li>
-                                <a href="about-us.html">About Us</a>
+                                <a href="/about-us">About Us</a>
                             </li>
+
                             <li>
-                                <a href="product.html">Product</a>
+                                <a href="/shop">Shop</a>
                             </li>
-                            <li>
-                                <a href="/shop">Product left Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="product-right-sidebar.html">Product Right Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="product-single.html">Product Single</a>
-                            </li>
-                            <li>
-                                <a href="checkout.html">Checkout</a>
-                            </li>
+
 
                         </ul>
                     </div>
@@ -370,46 +297,12 @@
                     </div>
                     <div class="link-page">
                         <ul>
-                            <li>
-                                <a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">Blog Right Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a>
-                            </li>
-                            <li>
-                                <a href="privacy.html">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="terms.html">Terms of Use</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="widgettitle">
-                    <h4>Our Story</h4>
-                    <div class="line">
-                        <img src="{{asset('front/images/4.png')}}" alt="line">
-                    </div>
-                    <div class="link-page">
-                        <div class="img-ftr">
-                            <div class="small-img"> <img src="{{asset('front/images/s1.jpg')}}" alt="img"> </div>
-                            <div class="small-img"> <img src="{{asset('front/images/s2.jpg')}}" alt="img"> </div>
-                            <div class="small-img"> <img src="{{asset('front/images/s3.jpg')}}" alt="img"> </div>
-                            <div class="small-img"> <img src="{{asset('front/images/s4.jpg')}}" alt="img"> </div>
-                            <div class="small-img"> <img src="{{asset('front/images/s5.jpg')}}" alt="img"> </div>
-                            <div class="small-img"> <img src="{{asset('front/images/s6.jpg')}}" alt="img"> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
