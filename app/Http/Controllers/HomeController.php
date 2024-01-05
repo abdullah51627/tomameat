@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Customer;
+use App\Models\CustomerAddress;
+use App\Models\Order;
+use App\Models\OrderItem;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -88,7 +92,53 @@ class HomeController extends Controller
 
         if($request->getMethod() == 'POST'){
 
-            dd($request->all());
+
+
+//            \Darryldecode\Cart\Facades\CartFacade::;
+
+            $customer = Customer::firstOrCreate([
+                'email' => $request->email
+            ],[
+               'name' => $request->first_name.' '.$request->last_name,
+               'email' => $request->email
+            ]);
+            $address = CustomerAddress::create([
+                'customer_id' => $customer->id,
+                'street' => $request->state,
+                'zip_code' => $request->zip,
+                'city' => $request->city,
+                'state' => $request->state,
+                'country' => $request->country,
+                'type' => "shipping",
+            ]);
+
+            $total = \Cart::getTotal();
+            $order = Order::create([
+               'customer_id' => $customer->id,
+               'subtotal' =>$total,
+               'total' =>$total,
+               'billing_address_id' => $address->id,
+               'shipping_address_id' => $address->id,
+               'status' => 1,
+               'payment_type' => "COD"
+            ]);
+            foreach (\Cart::getContent() as $item){
+
+
+                $orderItem = OrderItem::create([
+                   'order_id' => $order->id,
+                   'item_id' => $item->id,
+                   'item_quantity' => $item->quantity,
+                   'price' => $item->price,
+                ]);
+                $product = Product::find($item->id);
+
+                $product->qty = $product->qty - $item->quantity;
+                $product->save();
+            }
+            \Cart::clear();
+            return  redirect("/?successMsg=Thank you for your order");
+
         }
         $items = \Cart::getContent();
 

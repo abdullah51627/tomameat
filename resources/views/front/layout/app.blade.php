@@ -464,6 +464,7 @@
 <script src="{{asset('front/js/isotope.pkgd.min.js')}}"></script>
 <script src="{{asset('front/js/custom.js')}}"></script>
 <script src="{{asset('assets/js/toaster.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- custom js-->
 <script>
@@ -506,6 +507,10 @@
     function updateCartCount(count){
         $(".cartCount").text(count)
     }
+
+    @if(request()->has("successMsg"))
+        Swal.fire("{{request()->successMsg}}")
+    @endif
 </script>
 
 @yield('script')

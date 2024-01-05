@@ -41,6 +41,7 @@
                     </a>
                 </li>
 
+
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="uil-window-section"></i>
@@ -63,7 +64,14 @@
                     </ul>
                 </li>
 
-{{--                <li class="menu-title">@lang('translation.Apps')</li>--}}
+                <li>
+                    <a href="{{route("inventory")}}">
+                        <i class="uil-home-alt"></i>
+                        <span>@lang('translation.Inventory')</span>
+                    </a>
+                </li>
+
+                {{--                <li class="menu-title">@lang('translation.Apps')</li>--}}
 
 {{--                <li>--}}
 {{--                    <a href="calendar" class="waves-effect">--}}

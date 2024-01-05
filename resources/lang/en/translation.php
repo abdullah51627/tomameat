@@ -153,6 +153,7 @@ return [
     "CategoryCreate" => "Category Create",
     "CategoryList" => "Category LIst",
     "Category" => "Category",
+    "Inventory" => "Inventory",
 ];
 
 ?>

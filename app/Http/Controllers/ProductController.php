@@ -85,4 +85,20 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function inventory(Request $request){
+//        dd($request->all());
+        if($request->ajax()){
+            $data = Product::with("categoryRel");
+            return DataTables::of($data)
+                ->addColumn("status",function($row){
+                    return $row->status == 1 ?"active":"inactive";
+                })
+                ->addColumn("action",function($row){
+                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
+                })
+                ->make();
+        }
+        return view("admin.products.inventory");
+    }
 }
