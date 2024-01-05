@@ -24,7 +24,7 @@
                             </div>
                         </div>
 
-                        <h4 class="mt-5">Let's get started with Minible</h4>
+                        <h4 class="mt-5">Let's get started with TomeMeat</h4>
                         <p class="text-muted">It will be as simple as Occidental in fact it will be Occidental.</p>
 
                         <div class="row justify-content-center mt-5">

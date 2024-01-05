@@ -149,7 +149,7 @@
                 title: '<i>HTML</i> <u>example</u>',
                 icon: 'info',
                 html: 'You can use <b>bold text</b>, ' +
-                '<a href="//Themesbrand.in/">links</a> ' +
+                '<a href="//TomeMeat.in/">links</a> ' +
                 'and other HTML tags',
                 showCloseButton: true,
                 showCancelButton: true,

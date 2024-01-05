@@ -21,7 +21,7 @@
 
                                 <div class="text-center mt-2">
                                     <h5 class="text-primary">Reset Password</h5>
-                                    <p class="text-muted">Reset Password with Minible.</p>
+                                    <p class="text-muted">Reset Password with TomeMeat.</p>
                                 </div>
                                 <div class="p-2 mt-4">
                                     @if (session('status'))
@@ -63,7 +63,7 @@
                             <p>© <script>
                                     document.write(new Date().getFullYear())
 
-                                </script> Minible. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                </script> TomeMeat. Crafted with <i class="mdi mdi-heart text-danger"></i> by TomeMeat</p>
                         </div>
                     </div>
                 </div>

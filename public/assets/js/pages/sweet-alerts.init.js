@@ -130,7 +130,7 @@ var __webpack_exports__ = {};
       Swal.fire({
         title: '<i>HTML</i> <u>example</u>',
         icon: 'info',
-        html: 'You can use <b>bold text</b>, ' + '<a href="//Themesbrand.in/">links</a> ' + 'and other HTML tags',
+        html: 'You can use <b>bold text</b>, ' + '<a href="//TomeMeat.in/">links</a> ' + 'and other HTML tags',
         showCloseButton: true,
         showCancelButton: true,
         confirmButtonClass: 'btn btn-success',

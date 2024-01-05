@@ -16,7 +16,7 @@
                             <img alt="img" src="{{asset('front/images/item1.png')}}">
                         </div>
                         <div class="item-text">
-                            <h4>Free Delivery on orders over £50</h4>
+                            <h4>Free Delivery on orders over PKR50</h4>
                             <p>Proin varius malesuada lacinia.</p>
                         </div>
                     </li>

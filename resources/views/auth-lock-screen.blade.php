@@ -56,7 +56,7 @@
                             <p>© <script>
                                     document.write(new Date().getFullYear())
 
-                                </script> Minible. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                </script> TomeMeat. Crafted with <i class="mdi mdi-heart text-danger"></i> by TomeMeat</p>
                         </div>
                     </div>
                 </div>

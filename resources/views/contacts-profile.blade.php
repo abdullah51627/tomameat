@@ -163,7 +163,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">02</th>
-                                            <td><a href="#" class="text-dark">Minible Admin</a></td>
+                                            <td><a href="#" class="text-dark">TomeMeat Admin</a></td>
                                             <td>
                                                 06 Jun, 2020
                                             </td>
@@ -209,7 +209,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">04</th>
-                                            <td><a href="#" class="text-dark">Minible Landing</a></td>
+                                            <td><a href="#" class="text-dark">TomeMeat Landing</a></td>
                                             <td>
                                                 13 May, 2020
                                             </td>

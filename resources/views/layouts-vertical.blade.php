@@ -2,7 +2,7 @@
 @section('title') @lang('translation.Vertical') @endsection
 @section('content')
 @component('common-components.breadcrumb')
-@slot('pagetitle') Minible @endslot
+@slot('pagetitle') TomeMeat @endslot
 @slot('title') Dashboard @endslot
 @endcomponent
 <div class="row">

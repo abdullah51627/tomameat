@@ -3,7 +3,7 @@
     "name": "tomameat",
     "version": "2.5.1",
     "description": "",
-    "author": "Themesbrand",
+    "author": "TomeMeat",
     "scripts": {
         "dev": "npm run development",
         "development": "mix",

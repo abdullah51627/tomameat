@@ -2,7 +2,7 @@
 @section('title') @lang('translation.Dashboard') @endsection
 @section('content')
 @component('common-components.breadcrumb')
-@slot('pagetitle') Minible @endslot
+@slot('pagetitle') TomeMeat @endslot
 @slot('title') Toma Meat Dashboard @endslot
 @endcomponent
 
