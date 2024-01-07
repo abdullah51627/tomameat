@@ -5,15 +5,28 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreVendorRequest;
 use App\Http\Requests\UpdateVendorRequest;
 use App\Models\Vendor;
+use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class VendorController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //
+        if($request->ajax()){
+            $vendors = Vendor::query();
+
+            return DataTables::of($vendors)
+
+                ->addColumn("action",function($row){
+                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
+                })
+                ->make();
+        }
+
         return view("admin.products.vendors");
     }
 

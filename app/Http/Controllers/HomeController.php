@@ -119,7 +119,7 @@ class HomeController extends Controller
                'total' =>$total,
                'billing_address_id' => $address->id,
                'shipping_address_id' => $address->id,
-               'status' => 1,
+               'status' => 'checkout',
                'payment_type' => "COD"
             ]);
             foreach (\Cart::getContent() as $item){

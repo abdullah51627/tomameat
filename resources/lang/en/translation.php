@@ -156,6 +156,8 @@ return [
     "Inventory" => "Inventory",
     "Orders" => "Orders",
     "Vendors" => "Vendors",
+    "VendorsCreate" => "Vendors Create",
+    "VendorsList" => "Vendors List",
 ];
 
 ?>

@@ -63,6 +63,16 @@
                         <li><a href="{{route("categories.create")}}">@lang('translation.CategoryCreate')</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="uil-window-section"></i>
+                        <span>@lang('translation.Vendors')</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="true">
+                        <li><a href="{{route("vendors.index")}}">@lang('translation.VendorsList')</a></li>
+                        <li><a href="{{route("vendors.create")}}">@lang('translation.VendorsCreate')</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="{{route("inventory")}}">

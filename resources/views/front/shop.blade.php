@@ -164,7 +164,7 @@
                                         </ul>
                                         <span class="product-price">{{$product->price}} PKR <span>{{$product->price * 2}} PKR</span> </span>
                                         <p class="product-text">{{\Illuminate\Support\Str::limit($product->description,50,$end = '...')}}</p>
-                                        <a class="custom-btn" href="product-single.html">Add Cart</a>
+                                        <a class="custom-btn addToCart" data-product-id={{$product->id}} href="javascript:void(0);" >Add Cart</a>
                                     </div>
                                 </div>
                             @empty

@@ -107,13 +107,12 @@ class ProductController extends Controller
     }
     public function orders(Request $request){
 
+
         if($request->ajax()){
             $orders = Order::with('customer')->get();
 
             return DataTables::of($orders)
-                ->addColumn("status",function($row){
-                    return $row->status == 1 ?"active":"inactive";
-                })
+
                 ->addColumn("action",function($row){
                     return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
                 })
@@ -122,20 +121,4 @@ class ProductController extends Controller
         return view("admin.products.orders");
     }
 
-    public function vendors(Request $request){
-
-        if($request->ajax()){
-            $vendors = Vendor::query();
-
-            return DataTables::of($vendors)
-                ->addColumn("status",function($row){
-                    return $row->status == 1 ?"active":"inactive";
-                })
-                ->addColumn("action",function($row){
-                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
-                })
-                ->make();
-        }
-        return view("admin.products.vendors");
-    }
 }

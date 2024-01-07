@@ -27,8 +27,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Email</th>
-                            <th>Total</th>
+                            <th>Created By </th>
+                            <th>Created At</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>
