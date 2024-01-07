@@ -154,6 +154,7 @@ return [
     "CategoryList" => "Category LIst",
     "Category" => "Category",
     "Inventory" => "Inventory",
+    "Orders" => "Orders",
 ];
 
 ?>

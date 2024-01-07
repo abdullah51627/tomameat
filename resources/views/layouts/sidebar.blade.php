@@ -70,6 +70,12 @@
                         <span>@lang('translation.Inventory')</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{route("orders")}}">
+                        <i class="uil-shopping-bag"></i>
+                        <span>@lang('translation.Orders')</span>
+                    </a>
+                </li>
 
                 {{--                <li class="menu-title">@lang('translation.Apps')</li>--}}
 

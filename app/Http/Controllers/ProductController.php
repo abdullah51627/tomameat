@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
+use App\Models\Order;
 use App\Models\Product;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Yajra\DataTables\Facades\DataTables;
@@ -100,5 +103,21 @@ class ProductController extends Controller
                 ->make();
         }
         return view("admin.products.inventory");
+    }
+    public function orders(Request $request){
+
+        if($request->ajax()){
+            $orders = Order::with('customer')->get();
+
+            return DataTables::of($orders)
+                ->addColumn("status",function($row){
+                    return $row->status == 1 ?"active":"inactive";
+                })
+                ->addColumn("action",function($row){
+                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
+                })
+                ->make();
+        }
+        return view("admin.products.orders");
     }
 }

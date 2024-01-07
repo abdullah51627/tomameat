@@ -31,8 +31,7 @@ Route::group(['prefix' => '/admin'],function(){
     Route::resource("products",\App\Http\Controllers\ProductController::class);
     Route::resource("categories", \App\Http\Controllers\CategoryController::class);
     Route::get("inventory", [\App\Http\Controllers\ProductController::class,'inventory'])->name("inventory");
-
-
+    Route::get("orders", [\App\Http\Controllers\ProductController::class,'orders'])->name("orders");
 });
 
 Route::view('about-us', "front.about-us");
