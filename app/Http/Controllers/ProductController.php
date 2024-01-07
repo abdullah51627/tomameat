@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 
+use App\Models\Vendor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Yajra\DataTables\Facades\DataTables;
@@ -119,5 +120,22 @@ class ProductController extends Controller
                 ->make();
         }
         return view("admin.products.orders");
+    }
+
+    public function vendors(Request $request){
+
+        if($request->ajax()){
+            $vendors = Vendor::query();
+
+            return DataTables::of($vendors)
+                ->addColumn("status",function($row){
+                    return $row->status == 1 ?"active":"inactive";
+                })
+                ->addColumn("action",function($row){
+                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
+                })
+                ->make();
+        }
+        return view("admin.products.vendors");
     }
 }

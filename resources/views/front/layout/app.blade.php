@@ -103,12 +103,6 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="/shop">Shop</a>
                                     </li>
-
-
-
-
-
-
                                     <li class="nav-item menu-click1 ps-rel">
                                         <a class="nav-link" href="/cart">Cart <span class="cartCount">{{ Cart::getTotalQuantity()}}</span> <i class="fa fa-shopping-cart"
                                                                                                                                                    aria-hidden="true"></i></a>

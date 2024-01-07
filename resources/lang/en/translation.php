@@ -155,6 +155,7 @@ return [
     "Category" => "Category",
     "Inventory" => "Inventory",
     "Orders" => "Orders",
+    "Vendors" => "Vendors",
 ];
 
 ?>

@@ -30,8 +30,10 @@ Route::group(['prefix' => '/admin'],function(){
     Route::get("/", [\App\Http\Controllers\DashboardController::class,'index']);
     Route::resource("products",\App\Http\Controllers\ProductController::class);
     Route::resource("categories", \App\Http\Controllers\CategoryController::class);
+    Route::resource("vendors", \App\Http\Controllers\VendorController::class);
     Route::get("inventory", [\App\Http\Controllers\ProductController::class,'inventory'])->name("inventory");
     Route::get("orders", [\App\Http\Controllers\ProductController::class,'orders'])->name("orders");
+
 });
 
 Route::view('about-us', "front.about-us");
