@@ -16,13 +16,18 @@ class VendorController extends Controller
     public function index(Request $request)
     {
         //
-        if($request->ajax()){
-            $vendors = Vendor::query();
 
+        if($request->ajax()){
+
+            $vendors = Vendor::with("createdBy");
             return DataTables::of($vendors)
 
+
+                ->addColumn('created_at',function($row){
+                    return $row->created_at->format("Y-m-d H:i:s A");
+                })
                 ->addColumn("action",function($row){
-                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
+                    return "<button class='btn btn-danger' onclick='deleteVendor($row->id)'>Delete</button>";
                 })
                 ->make();
         }
@@ -36,6 +41,7 @@ class VendorController extends Controller
     public function create()
     {
         //
+        return view('admin.products.vendors-create');
     }
 
     /**
@@ -44,6 +50,10 @@ class VendorController extends Controller
     public function store(StoreVendorRequest $request)
     {
         //
+        $data = $request->except("_token");
+        $data['created_by'] = auth()->user()->id;
+        Vendor::create($data);
+        return redirect()->route("vendors.index");
     }
 
     /**

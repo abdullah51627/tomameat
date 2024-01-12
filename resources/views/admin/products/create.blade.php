@@ -38,6 +38,17 @@
                             </select>
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="mb-3 ">
+                            <label for="example-text-input" class=" col-form-label">Vendor</label>
+                            <select class="form-select" name='vendor_id' required>
+                                <option >Select Vendor</option>
+                                @foreach(\App\Models\Vendor::get() as $vendor)
+                                <option value="{{$vendor->id}}">{{$vendor->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
 
                     {{-- <div class="col-lg-4">
                         <div class="mb-3 ">

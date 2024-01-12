@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\ApiRes;
 use App\Models\Customer;
 use App\Models\Order;
 use App\Models\Product;
@@ -25,10 +26,13 @@ class ProductController extends Controller
         //
 
         if($request->ajax()){
-            $data = Product::with("categoryRel");
+            $data = Product::with(["categoryRel","vendor"]);
             return DataTables::of($data)
+                ->addColumn("status",function($row){
+                    return $row->status == 1 ? 'active': "inactive";
+                })
             ->addColumn("action",function($row){
-                return $row->categoryRel;
+                return "<button onclick='editProduct($row->id)' class='btn btn-primary'>Edit</button>";
             })
                 ->make();
         }
@@ -64,6 +68,7 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         //
+        return ApiRes::success("Product founnd",200,$product);
     }
 
     /**
@@ -114,6 +119,7 @@ class ProductController extends Controller
             return DataTables::of($orders)
 
                 ->addColumn("action",function($row){
+                    return "";
                     return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
                 })
                 ->make();

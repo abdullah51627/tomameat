@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-            Schema::create('vendors', function (Blueprint $table) {
-            $table->id();
-            $table->string("name");
-            $table->foreignId("created_by");
-            $table->enum("status",['active','inactive'])->default("active");
-            $table->timestamps();
+        Schema::table('products', function (Blueprint $table) {
+            //
+            $table->foreignId("vendor_id");
         });
     }
 
@@ -25,6 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('vendors');
+        Schema::table('products', function (Blueprint $table) {
+            //
+            $table->dropColumn("vendor_id");
+        });
     }
 };

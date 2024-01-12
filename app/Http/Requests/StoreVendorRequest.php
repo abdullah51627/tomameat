@@ -11,7 +11,7 @@ class StoreVendorRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return auth()->check();
     }
 
     /**
@@ -23,6 +23,8 @@ class StoreVendorRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required|max:220|unique:vendors,name',
+            'status' => 'required|in:active,inactive',
         ];
     }
 }

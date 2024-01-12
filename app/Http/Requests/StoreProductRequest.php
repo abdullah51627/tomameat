@@ -30,6 +30,7 @@ class StoreProductRequest extends FormRequest
             'description' => "required|max:1000",
             'qty' => 'required',
             'keywords' => 'array',
+            'vendor_id' => 'required|exists:vendors,id',
         ];
     }
 }

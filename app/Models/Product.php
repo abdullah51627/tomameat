@@ -15,9 +15,12 @@ class Product extends Model
         return $this->attributes['keywords'] = serialize($value);
     }
     public function categoryRel(){
-        return $this->belongsTo(Category::class,'category_id','id');
+        return $this->belongsTo(Category::class,'category','id');
     }
-
+    public function vendor(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Vendor::class,'vendor_id','id');
+    }
     public function scopeSearch($query,$search){
         $query->where(function($q) use($search){
             $q->where("name",'like','%'.$search.'%');
@@ -30,4 +33,5 @@ class Product extends Model
 
         return $query;
     }
+
 }
