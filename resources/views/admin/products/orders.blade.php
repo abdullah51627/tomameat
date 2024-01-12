@@ -52,11 +52,21 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="font-size-16">Overflowing text to show scroll behavior</h5>
 
-                    <form action="{{route("orders.update")}}" method="PUT">
-                        <select name="status" id="status-order">
-                            <option value=""></option>
+
+
+                    <form action="{{route("update-order")}}" method="POST" id="formSUb">
+                        @csrf
+                        <input type="hidden" name="order_id" class="order_id">
+                        <select name="status" id="status-order" class="form-control">
+                            @foreach(\App\Helpers\OrderHelper::getStatuses() as $key => $status)
+
+                            <option value="{{$status}}">{{$status}}</option>
+
+                            @endforeach
+{{--                            <option value="delivered">delivered</option>--}}
+{{--                            <option value="not-picked">picked</option>--}}
+{{--                            <option value="pending">Canceled</option>--}}
                         </select>
 
                     </form>
@@ -64,7 +74,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light" onclick="document.getElementById('formSUb').submit()">Save changes</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -97,6 +107,7 @@
         });
 
         function manageOrder(id){
+            $(".order_id").val(id);
             $("#myModal").modal("show");
             return id;
             const url = '/admin/order-find/'+id;

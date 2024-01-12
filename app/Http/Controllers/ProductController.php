@@ -131,4 +131,15 @@ class ProductController extends Controller
         return $request->all();
     }
 
+    public function updateOrders(Request $request){
+        $request->validate([
+            'order_id' => 'required|exists:orders,id',
+            'status' => 'required',
+        ]);
+        $order = Order::find($request->order_id);
+        $order->status = $request->status;
+        $order->save();
+        return redirect()->back()->with(['successMsg' =>["Updated success"]]);
+    }
+
 }
