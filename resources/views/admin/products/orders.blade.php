@@ -43,6 +43,32 @@
         </div> <!-- end col -->
     </div> <!-- end row -->
 
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Modal Heading</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="font-size-16">Overflowing text to show scroll behavior</h5>
+
+                    <form action="{{route("orders.update")}}" method="PUT">
+                        <select name="status" id="status-order">
+                            <option value=""></option>
+                        </select>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 @endsection
 @section('script')
     <script src="{{ URL::asset('/assets/libs/datatables/datatables.min.js') }}"></script>
@@ -69,5 +95,17 @@
                 {data: 'action', name: 'action', orderable: false, searchable: false},
             ]
         });
+
+        function manageOrder(id){
+            $("#myModal").modal("show");
+            return id;
+            const url = '/admin/order-find/'+id;
+
+
+            $.get(url,{},function(data,status){
+                console.log(data,'Data')
+
+            })
+        }
     </script>
 @endsection

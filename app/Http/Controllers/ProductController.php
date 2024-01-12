@@ -119,12 +119,16 @@ class ProductController extends Controller
             return DataTables::of($orders)
 
                 ->addColumn("action",function($row){
-                    return "";
-                    return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
+//                    return "";
+                    return "<button class='btn btn-primary' onclick='manageOrder($row->id)'>Manage</button>";
                 })
                 ->make();
         }
         return view("admin.products.orders");
+    }
+
+    public function orderFind(Request $request){
+        return $request->all();
     }
 
 }

@@ -33,6 +33,7 @@ Route::group(['prefix' => '/admin'],function(){
     Route::resource("vendors", \App\Http\Controllers\VendorController::class);
     Route::get("inventory", [\App\Http\Controllers\ProductController::class,'inventory'])->name("inventory");
     Route::get("orders", [\App\Http\Controllers\ProductController::class,'orders'])->name("orders");
+//    Route::get("order-find", [\App\Http\Controllers\ProductController::class,'orderFind'])->name("order.find");
 
 });
 
