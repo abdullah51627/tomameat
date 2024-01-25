@@ -114,6 +114,7 @@ class ProductController extends Controller
                     return $row->status == 1 ?"active":"inactive";
                 })
                 ->addColumn("action",function($row){
+                    return "";
                     return "<button class='btn btn-primary' onclick='manageQty($row->id)'>Manage</button>";
                 })
                 ->make();
