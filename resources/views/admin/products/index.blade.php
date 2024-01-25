@@ -21,6 +21,18 @@
                     <h4 class="card-title">Products List</h4>
                     <p class="card-title-desc">list of all products shown here</code>.
                     </p>
+                    @include('message')
+                    <div class="col-lg-4">
+                        <label for="">Filter vendor</label>
+                        <select name="vendor_list" id="vendor" class="form-control">
+                            <option value="0">Select any vendor</option>
+                            @foreach(\App\Models\Vendor::get() as $vendor)
+                                <option {{request()->has("vendor_id") ? request("vendor_id") == $vendor->id ? "selected": "" :"" }} value="{{$vendor->id}}">{{$vendor->name}}</option>
+                            @endforeach
+                        </select>
+                        <br>
+
+                    </div>
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap"
                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -30,6 +42,8 @@
                             <th>Title</th>
                             <th>Name</th>
                             <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
                             <th>Status</th>
                             <th>Vendor</th>
                             <th>Action</th>
@@ -55,16 +69,26 @@
                 </div>
                 <div class="modal-body">
 
-                    <div class="">
-                        <label for="pro-name">Name</label>
-                        <input type="text" name="name" id="pro-name" class="form-control">
-                    </div>
+                    <form action="{{route("products.update",":id")}}" method="POST" id="productUpdateForm">
+                        @csrf 
+                        @method("PATCH")
+                        <div class="">
+                            <label for="pro-name">Name</label>
+                            <input type="text" name="name" id="pro-name" class="form-control">
+                        </div>
+    
+                        <div class="">
+                            <label for="pro-qty">Quantity</label>
+                            <input type="text" name="qty" id="pro-qty" class="form-control">
+                        </div>
+
+                    </form>
 
 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary waves-effect waves-light">Save changes</button>
+                    <button type="button" class="btn btn-primary waves-effect waves-light" onclick="document.getElementById('productUpdateForm').submit()">Save changes</button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -85,12 +109,19 @@
         var table = $('#datatable').DataTable({
             processing: true,
             serverSide: true,
-            ajax: "{{ route('products.index') }}",
+            ajax: {
+                url: "{{ route('products.index') }}",
+                "data": function ( d ) {
+                    d.vendor_id = {{request()->has("vendor_id") ? request("vendor_id") :"0"}};
+                }
+            },
             columns: [
                 {data: 'id', name: 'id'},
                 {data: 'title', name: 'title'},
                 {data: 'name', name: 'name'},
-                {data: 'category_rel.name', name: 'category_rel.name'},
+                {data: 'category_rel.name', name: 'category_rel.name',searchable:false},
+                {data: 'qty', name: 'qty',searchable:false},
+                {data: 'price', name: 'price',searchable:false},
                 {data: 'status', name: 'status'},
                 {data: 'vendor.name', name: 'vendor.name'},
                 {data: 'action', name: 'action', orderable: false, searchable: false},
@@ -107,8 +138,17 @@
                     console.log(data)
                 $("#editProductModal").modal("show");
                    $("#pro-name").val(data.name);
+                   $("#pro-qty").val(data.qty);
+                   let url = $("#productUpdateForm").attr("action");
+                   url = url.replace(":id",data.id);
+                   $("#productUpdateForm").attr("action",url)
                 }
             })
         }
+
+        $("#vendor").on("change",function(){
+            const optionSelected = $(this).find(" option:selected").val();
+            window.location.href = "/admin/products?vendor_id="+optionSelected;
+        })
     </script>
 @endsection

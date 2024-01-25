@@ -26,7 +26,12 @@ class ProductController extends Controller
         //
 
         if($request->ajax()){
+            
             $data = Product::with(["categoryRel","vendor"]);
+            
+            if($request->vendor_id > 0){
+                $data->where("vendor_id",$request->vendor_id);
+            }
             return DataTables::of($data)
                 ->addColumn("status",function($row){
                     return $row->status == 1 ? 'active': "inactive";
@@ -54,6 +59,7 @@ class ProductController extends Controller
     public function store(StoreProductRequest $request)
     {
         //
+
 
         $data = $request->except(['_token']);
         $data['url'] = Str::slug($data['title']);
@@ -85,6 +91,10 @@ class ProductController extends Controller
     public function update(UpdateProductRequest $request, Product $product)
     {
         //
+        $product->name = $request->name;
+        $product->qty = $request->qty;
+        $product->save();
+        return redirect()->back()->with(["sucessMsg" => ["Product has been updated"]]);
     }
 
     /**
